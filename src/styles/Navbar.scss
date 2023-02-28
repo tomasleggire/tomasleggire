@@ -15,6 +15,7 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
+    align-items: center;
 }
 
 .name-title {
@@ -25,8 +26,8 @@
 }
 
 .title-icon {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
 }
 
 .title-h3 {
@@ -34,14 +35,25 @@
     margin-bottom: 4px;
 }
 
-.nav-links, ul {
+.nav-links ul {
     list-style: none;
     display: flex;
-    width: 500px;
+    width: 370px;
     align-items: center;
     justify-content: space-around;
 }
 
+.nav-links ul li {
+    font-weight: 600;
+    color: var(--special-white);
+    cursor: pointer;
+    transition: .2s;
+}
+
 .title-h3:hover {
     text-decoration: underline;
+}
+
+.nav-links ul li:hover {
+    color: var(--blue-tres);
 }
