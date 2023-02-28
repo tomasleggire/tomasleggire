@@ -2,9 +2,9 @@ import React from 'react'
 import '../styles/Navbar.scss';
 import { MdAccountBox } from "react-icons/md";
 
-export default function Navbar() {
+export default function Navbar({ isVisible }) {
     return (
-        <header className='nav-main'>
+        <header className={`nav-main ${isVisible ? 'visible' : ''}`}>
             <nav className='nav'>
                 <div className='name-title'>
                     <MdAccountBox className='title-icon'/>
