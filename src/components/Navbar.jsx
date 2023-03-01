@@ -19,7 +19,7 @@ export default function Navbar({ isVisible }) {
                             PORTFOLIO
                         </li>
                         <li>
-                            PRICING
+                            CONTACT
                         </li>
                     </ul>
                 </div>

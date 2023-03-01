@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/App.scss';
 import HomeContainer from './containers/HomeContainer';
 import Navbar from './components/Navbar';
+import Portada from './components/Portada';
 import useElementOnScreen from './hooks/useElementOnScreen';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Navbar
           isVisible={isVisible} 
         />
+        <Portada />
       </HomeContainer>
         <div className='box'></div>
       <div className='box-dos' ref={containerRef}></div>
