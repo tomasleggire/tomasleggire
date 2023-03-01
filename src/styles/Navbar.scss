@@ -13,7 +13,7 @@
 }
 
 .visible {
-    height: 65px;
+    height: 60px;
     box-shadow: 0 -18px 20px 10px var(--blue-tres);
     background: rgb(74,180,223);
 background: -moz-linear-gradient(329deg, rgba(74,180,223,1) 14%, rgb(53, 127, 224) 90%);
@@ -39,6 +39,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ab4df",endCo
 .title-icon {
     width: 30px;
     height: 30px;
+}
+
+.nav-menu-icon {
+    display: none;
 }
 
 .title-h3 {
@@ -70,7 +74,30 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ab4df",endCo
 }
 
 @media only screen and (max-width: 990px) {
+    .nav {
+        justify-content: space-between;
+        padding: 0 25px;
+    }
     .nav-links {
         display: none;
+    }
+    .nav-menu-icon {
+        display: flex;
+        width: 35px;
+        color: var(--special-white);
+        height: 35px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .nav-main {
+        height: 70px;
+    }
+    .nav {
+        padding: 0 20px;
+    }
+    .visible {
+        height: 50px;
     }
 }

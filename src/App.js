@@ -9,15 +9,14 @@ function App() {
   const [containerRef, isVisible] = useElementOnScreen({
     root: null,
     rootMargin: "0px",
-    threshold: .1
+    threshold: 1.0
   });
 
   return (
-    <div className="App">
+    <div className="App" ref={containerRef}>
       <HomeContainer>
         <Navbar
           isVisible={isVisible}
-          ref={containerRef}
         />
         <Portada />
       </HomeContainer>
