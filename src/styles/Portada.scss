@@ -1,0 +1,28 @@
+@import 'vars';
+
+.portada-main {
+    padding-top: 160px;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.portada-title {
+    font-size: 70px;
+    color: var(--special-white);
+}
+
+.portada-h2 {
+    font-size: 40px;
+    background-color: var(--special-white);
+    color: var(--blue-secondary);
+    margin-top: -5px;
+}
+
+.portada-p {
+    margin-top: 30px;
+    font-size: var(--lg);
+    color: var(--special-white);
+    font-weight: 600;
+}
+
