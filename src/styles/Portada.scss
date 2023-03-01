@@ -1,10 +1,12 @@
 @import 'vars';
 
 .portada-main {
-    padding-top: 140px;
     max-width: 550px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
 }
 
 .portada-title {
@@ -63,10 +65,10 @@
 @media only screen and (max-width: 1000px) {
     .portada-main {
         padding: 0 15px;
-        padding-top: 120px;
+        padding-top: 40px;
     }
     .portada-title {
-        font-size: 40px;
+        font-size: 45px;
     }
     .portada-h2 {
         font-size: 28px;
@@ -79,11 +81,11 @@
 
 @media only screen and (max-width: 400px) {
     .portada-main {
-        padding: 0 15px;
-        padding-top: 90px;
+        padding: 0 20px;
+        padding-top: 50px;
     }
     .portada-title {
-        font-size: 30px;
+        font-size: 40px;
     }
     .portada-h2 {
         font-size: 18px;
@@ -93,7 +95,7 @@
         font-size: 12px;
     }
     .portada-btn {
-        margin-top: 22px;
+        margin-top: 42px;
         width: 45px;
         height: 45px;
     }

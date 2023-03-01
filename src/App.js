@@ -9,19 +9,19 @@ function App() {
   const [containerRef, isVisible] = useElementOnScreen({
     root: null,
     rootMargin: "0px",
-    threshold: 0.10
+    threshold: .1
   });
 
   return (
     <div className="App">
       <HomeContainer>
         <Navbar
-          isVisible={isVisible} 
+          isVisible={isVisible}
+          ref={containerRef}
         />
         <Portada />
       </HomeContainer>
         <div className='box'></div>
-      <div className='box-dos' ref={containerRef}></div>
     </div>
   );
 }
