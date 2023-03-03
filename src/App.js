@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Portada from './components/Portada';
 import useElementOnScreen from './hooks/useElementOnScreen';
 
+
 function App() {
   const [containerRef, isVisible] = useElementOnScreen({
     root: null,
@@ -15,9 +16,7 @@ function App() {
   return (
     <div className="App" ref={containerRef}>
       <HomeContainer>
-        <Navbar
-          isVisible={isVisible}
-        />
+        <Navbar isVisible={isVisible} />
         <Portada />
       </HomeContainer>
         <div className='box'></div>
