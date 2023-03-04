@@ -4,6 +4,7 @@ import HomeContainer from './containers/HomeContainer';
 import Navbar from './components/Navbar';
 import Portada from './components/Portada';
 import useElementOnScreen from './hooks/useElementOnScreen';
+import Services from './containers/Services';
 
 
 function App() {
@@ -19,7 +20,9 @@ function App() {
         <Navbar isVisible={isVisible} />
         <Portada />
       </HomeContainer>
-        <div className='box'></div>
+      <Services>
+
+      </Services>
     </div>
   );
 }
