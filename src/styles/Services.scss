@@ -3,6 +3,16 @@
 .services-main {
     width: 100%;
     height: 50%;
-    background-color: var(--white);
+    outline: auto;
+}
+
+.services-slider {
+    max-width: 70%;
+    margin: auto;
+    outline: auto;
+    height: 400px;
+}
+
+.services-slider div {
     outline: auto;
 }

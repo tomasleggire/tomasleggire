@@ -57,12 +57,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ab4df",endCo
     width: 370px;
     align-items: center;
     justify-content: space-around;
+   
 }
 
 .nav-links ul li {
     font-weight: 600;
     color: var(--special-white);
     cursor: pointer;
+    transition: .3s;
    
 }
 
