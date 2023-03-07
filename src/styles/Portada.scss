@@ -63,10 +63,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#106aa1",endCo
 }
 
 .portada-btn:hover {
-box-shadow: 0px 0px 10px 0px var(--special-white);
--webkit-box-shadow: 0px 0px 10px 0px var(--special-white);
--moz-box-shadow: 0px 0px 10px 0px var(--special-white);
-    
+// box-shadow: 0px 0px 10px 0px var(--special-white);
+// -webkit-box-shadow: 0px 0px 10px 0px var(--special-white);
+// -moz-box-shadow: 0px 0px 10px 0px var(--special-white);
+    letter-spacing: 1px;
     width: 160px;
 }
 
