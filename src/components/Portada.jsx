@@ -1,6 +1,5 @@
 import React from "react";
 import '../styles/Portada.scss';
-import { MdOutlineArrowDownward } from "react-icons/md";
 
 export default function Portada() {
     return (
@@ -16,4 +15,3 @@ export default function Portada() {
 }
 
 
-{/* <MdOutlineArrowDownward className="portada-btn-icon" alt='Get Started'/> */}
