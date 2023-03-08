@@ -1,0 +1,17 @@
+@import 'vars';
+
+.option-main {
+    height: 300px;
+    display: flex;
+    padding: 20px 30px;
+    flex-direction: column;
+}
+
+.option-imagen {
+    padding: 0 20px;
+    height: 200px;
+}
+
+.option-text {
+    text-align: center;
+}

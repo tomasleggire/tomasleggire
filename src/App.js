@@ -5,9 +5,14 @@ import Navbar from './components/Navbar';
 import Portada from './components/Portada';
 import useElementOnScreen from './hooks/useElementOnScreen';
 import Services from './containers/Services';
+import AppContext from './context/AppContext';
+import useInitialState from './hooks/useInitialState';
 
 
 function App() {
+
+  const initialState = useInitialState();
+
   const [containerRef, isVisible] = useElementOnScreen({
     root: null,
     rootMargin: "0px",
@@ -15,6 +20,7 @@ function App() {
   });
 
   return (
+    <AppContext.Provider value={initialState}>
     <div className="App" ref={containerRef}>
       <HomeContainer>
         <Navbar isVisible={isVisible} />
@@ -24,6 +30,7 @@ function App() {
 
       </Services>
     </div>
+    </AppContext.Provider>
   );
 }
 
