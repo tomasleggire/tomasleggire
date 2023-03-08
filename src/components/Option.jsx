@@ -4,7 +4,9 @@ import '../styles/Option.scss';
 export default function Option({image, text}) {
     return (
         <div className="option-main">
-            <div className="option-imagen" style={{background: `${image}`}}></div>
+            <div>
+                <img src={image} className="option-imagen"/>
+            </div>
             <p className="option-text">{text}</p>
         </div>
     )
