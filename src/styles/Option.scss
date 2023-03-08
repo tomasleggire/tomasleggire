@@ -3,7 +3,7 @@
 .option-main {
     height: 300px;
     display: flex;
-    padding: 0px 30px;
+    padding: 0px 21px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@
 
 .option-imagen {
     height: 110px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .option-title {
@@ -28,4 +28,13 @@
     font-size: var(--lg);
     padding: 0 25px;
     font-weight: 500;
+}
+
+@media only screen and (max-width: 1024px) {
+    .option-main {
+        padding: 0;
+    }
+    .option-text {  
+        padding: 0 10px;
+    }
 }
