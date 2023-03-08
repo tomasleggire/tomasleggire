@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
 import '../styles/Services.scss';
 import Slider from "react-slick";
 
 export default function Services() {
+    const slider = useRef(null);
+
     const settings = {
         dots: false,
         infinite: true,
@@ -11,6 +13,7 @@ export default function Services() {
         slidesToScroll: 1,
         initialSlide: 0,
         autoplay: true,
+        arrows: false,
         autoplaySpeed: 3000,
         responsive: [
           {
@@ -30,9 +33,11 @@ export default function Services() {
           }
         ]
       };
+
     return (
         <div className="services-main">
-            <Slider {...settings} className='services-slider'>
+            <button onClick={() => slider?.current?.slickPrev()}>Prev</button>
+            <Slider {...settings} className='services-slider' ref={slider}>
       <div>
         <h3>1</h3>
       </div>
@@ -52,6 +57,7 @@ export default function Services() {
         <h3>6</h3>
       </div>
             </Slider>
+<button onClick={() => slider?.current?.slickNext()}>Next</button>
         </div>
     )
 }
