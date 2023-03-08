@@ -3,6 +3,8 @@ import AppContext from "../context/AppContext";
 import "../styles/Services.scss";
 import Slider from "react-slick";
 import Option from "../components/Option";
+import { MdKeyboardArrowLeft } from "react-icons/md";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 export default function Services() {
   const { optionsState } = useContext(AppContext);
@@ -40,7 +42,9 @@ export default function Services() {
 
   return (
     <div className="services-main">
-      <button onClick={() => slider?.current?.slickPrev()}>Prev</button>
+      <button onClick={() => slider?.current?.slickPrev()} className="btn-option-div">
+        <MdKeyboardArrowLeft className="btn-option"/>
+      </button>
       <Slider {...settings} className="services-slider" ref={slider}>
         {optionsState.map((item) => {
           return (
@@ -48,7 +52,9 @@ export default function Services() {
           )
         })}
       </Slider>
-      <button onClick={() => slider?.current?.slickNext()}>Next</button>
+      <button onClick={() => slider?.current?.slickNext()} className="btn-option-div">
+        <MdKeyboardArrowRight className="btn-option"/>
+      </button>
     </div>
   );
 }
