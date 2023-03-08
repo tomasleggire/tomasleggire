@@ -21,10 +21,12 @@
     cursor: pointer;
     color: var(--blue-tres);
     opacity: .3;
+    transition: .3s;
 }
 
 .btn-option-div:hover {
     opacity: 1;
+    transform: scale(1.1);
 }
 
 .btn-option {
@@ -38,6 +40,13 @@
     }
 }
 
+@media only screen and (max-width: 750px) {
+    .btn-option {
+    width: 55px;
+    height: 55px;
+}
+}
+
 @media only screen and (max-width: 550px) {
     .services-slider {
         padding: 0;
@@ -46,5 +55,16 @@
     .btn-option {
         width: 35px;
         height: 35px;
+    }
+}
+
+@media only screen and (max-width: 345px) {
+    .services-slider {
+        padding: 0;
+        padding-right: 10px;
+    }
+    .btn-option {
+        width: 30px;
+        height: 30px;
     }
 }
