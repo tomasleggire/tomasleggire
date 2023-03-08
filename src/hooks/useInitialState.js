@@ -10,27 +10,33 @@ const useInitialState = () => {
     const optionsState = [
         {
             image: imageOne,
-            text: 'Collect client feedback and report bugs into Jira, Trello, Asana, Github directly from your site with screenshots, annotations, console logs, and more.'
+            text: 'A responsive design makes your website accessible to all users, regardless of their device',
+            title: 'MOBILE-FRIENDLY'
         },
         {
             image: imageTwo,
-            text: 'Collect client feedback and report bugs into Jira, Trello, Asana, Github directly from your site with screenshots, annotations, console logs, and more.'
+            text: 'A responsive design makes your website accessible to all users, regardless of their device',
+            title: 'MOBILE-FRIENDLY'
         },
         {
             image: imageThree,
-            text: 'Collect client feedback and report bugs into Jira, Trello, Asana, Github directly from your site with screenshots, annotations, console logs, and more.'
+            text: 'A responsive design makes your website accessible to all users, regardless of their device',
+            title: 'MOBILE-FRIENDLY'
         },
         {
             image: imageFour,
-            text: 'Collect client feedback and report bugs into Jira, Trello, Asana, Github directly from your site with screenshots, annotations, console logs, and more.'
+            text: 'A responsive design makes your website accessible to all users, regardless of their device',
+            title: 'MOBILE-FRIENDLY'
         },
         {
             image: imageFive,
-            text: 'Collect client feedback and report bugs into Jira, Trello, Asana, Github directly from your site with screenshots, annotations, console logs, and more.'
+            text: 'A responsive design makes your website accessible to all users, regardless of their device',
+            title: 'MOBILE-FRIENDLY'
         },
         {
             image: imageSix,
-            text: 'Collect client feedback and report bugs into Jira, Trello, Asana, Github directly from your site with screenshots, annotations, console logs, and more.'
+            text: 'A responsive design makes your website accessible to all users, regardless of their device',
+            title: 'MOBILE-FRIENDLY'
         }
     ]
     

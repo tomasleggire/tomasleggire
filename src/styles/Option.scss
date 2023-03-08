@@ -3,17 +3,29 @@
 .option-main {
     height: 300px;
     display: flex;
-    padding: 20px 30px;
+    padding: 0px 30px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
 }
 
 .option-imagen {
-    padding: 0 20px;
-    height: 120px;
+    height: 110px;
+    margin-bottom: 5px;
+}
+
+.option-title {
+    font-size: var(--lg);
+    margin-bottom: 18px;
+    font-weight: 500;
+    color: var(--blue-secondary);
 }
 
 .option-text {
     text-align: center;
+    color: var(--blue-tres);
+    font-size: var(--lg);
+    padding: 0 25px;
+    font-weight: 500;
 }

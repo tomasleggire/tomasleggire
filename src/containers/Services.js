@@ -44,7 +44,7 @@ export default function Services() {
       <Slider {...settings} className="services-slider" ref={slider}>
         {optionsState.map((item) => {
           return (
-            <Option image={item.image} text={item.text}/>
+            <Option image={item.image} text={item.text} title={item.title}/>
           )
         })}
       </Slider>
