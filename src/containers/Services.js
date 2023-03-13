@@ -6,7 +6,8 @@ import Option from "../components/Option";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
-export default function Services() {
+
+export default function Services({children}) {
   const { optionsState } = useContext(AppContext);
 
   const slider = useRef(null);
@@ -64,6 +65,7 @@ export default function Services() {
         </button>
       </div>
       <button className="btn-learn-more">Learn more</button>
+      {children}
     </>
   );
 }

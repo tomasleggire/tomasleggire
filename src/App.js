@@ -7,6 +7,7 @@ import useElementOnScreen from './hooks/useElementOnScreen';
 import Services from './containers/Services';
 import AppContext from './context/AppContext';
 import useInitialState from './hooks/useInitialState';
+import MoreInfo from './components/MoreInfo';
 
 
 function App() {
@@ -26,7 +27,9 @@ function App() {
         <Navbar isVisible={isVisible} />
         <Portada />
       </HomeContainer>
-      <Services />
+      <Services>
+        <MoreInfo />
+      </Services>
     </div>
     </AppContext.Provider>
   );
