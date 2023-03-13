@@ -30,6 +30,7 @@ function App() {
       <Services>
         <MoreInfo />
       </Services>
+      <div className='box'></div>
     </div>
     </AppContext.Provider>
   );
