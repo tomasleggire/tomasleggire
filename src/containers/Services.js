@@ -41,20 +41,29 @@ export default function Services() {
   };
 
   return (
-    <div className="services-main">
-      <button onClick={() => slider?.current?.slickPrev()} className="btn-option-div">
-        <MdKeyboardArrowLeft className="btn-option"/>
-      </button>
-      <Slider {...settings} className="services-slider" ref={slider}>
-        {optionsState.map((item) => {
-          return (
-            <Option image={item.image} text={item.text} title={item.title}/>
-          )
-        })}
-      </Slider>
-      <button onClick={() => slider?.current?.slickNext()} className="btn-option-div">
-        <MdKeyboardArrowRight className="btn-option"/>
-      </button>
-    </div>
+    <>
+      <div className="services-main">
+        <button
+          onClick={() => slider?.current?.slickPrev()}
+          className="btn-option-div"
+        >
+          <MdKeyboardArrowLeft className="btn-option" />
+        </button>
+        <Slider {...settings} className="services-slider" ref={slider}>
+          {optionsState.map((item) => {
+            return (
+              <Option image={item.image} text={item.text} title={item.title} />
+            );
+          })}
+        </Slider>
+        <button
+          onClick={() => slider?.current?.slickNext()}
+          className="btn-option-div"
+        >
+          <MdKeyboardArrowRight className="btn-option" />
+        </button>
+      </div>
+      <button className="btn-learn-more">Learn more</button>
+    </>
   );
 }

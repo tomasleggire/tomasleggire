@@ -34,6 +34,26 @@
     height: 75px;
 }
 
+.btn-learn-more {
+    border: none;
+    background: none;
+    border: 1px solid var(--blue-secondary);
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-top: 25px;
+    font-size: var(--lg);
+    color: var(--blue-secondary);
+    cursor: pointer;
+    margin-bottom: 100px;
+    text-align: center;
+    transition: .2s;
+}
+
+.btn-learn-more:hover {
+    color: var(--special-white);
+    background-color: var(--blue-secondary);
+}
+
 @media only screen and (max-width: 1553px) {
     .services-main {
         width: 80%;
