@@ -5,52 +5,69 @@
     border-top: 1px solid lightgrey;
 }
 
-.moreInfo-one {
+.moreInfo-one, .moreInfo-two {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 1100px;
     margin: auto;
-    margin-top: -80px;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid lightgrey;
+    margin-top: -50px;
 }
 
-.one-image {
+.one-image, .two-image {
     width: 650px;
 }
 
-.one-texts {
+.one-texts, .two-texts {
     text-align: left;
 }
 
-.one-h1 {
+.one-h2, .two-h2 {
     color: var(--blue-secondary);
 }
 
-.one-p {
+.one-p, .two-p {
     font-size: var(--lg);
     color: gray;
 }
 
+.two-image {
+    order: 2;
+}
+
+.two-texts {
+    order: 1;
+    text-align: right;
+}
+
 @media only screen and (max-width: 1200px) {
-    .moreInfo-one {
+    .moreInfo-one, .moreInfo-two {
         flex-direction: column;
         width: 100%;
     }
-    .one-texts {
+    .one-texts, .two-texts {
         text-align: center;
         max-width: 500px;
         padding: 0 20px;
+        margin-bottom: 60px;
+    }
+    .two-image {
+        order: 1;
+    }
+    
+    .two-texts {
+        order: 2;
     }
 }
 
 @media only screen and (max-width: 550px) {
-    .one-h1 {
+    .one-h2, .two-h2 {
         font-size: var(--lg);
         margin-bottom: 10px;
     }
     
-    .one-p {
+    .one-p, .two-p{
         font-size: var(--sm);
         padding: 0 30px;
     }
