@@ -3,8 +3,8 @@ import "../styles/Portfolio.scss";
 
 export default function Portfolio({ children }) {
   return (
-    <div className="portfolio-main">
-      <ul class="background-portfolio">
+    <div className="portfolio-main" name='portfolio'>
+      <ul className="background-portfolio">
         <li></li>
         <li></li>
         <li></li>

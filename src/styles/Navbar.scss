@@ -67,10 +67,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ab4df",endCo
     transition: .3s;
 }
 
-.nav-visible {
-    color: var(--blue-tres);
-}
-
 .title-h3:hover {
     text-decoration: underline;
 }
@@ -108,3 +104,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ab4df",endCo
     }
 }
 
+.active {
+    transition: .3s;
+    color: var(--blue-tres);
+}

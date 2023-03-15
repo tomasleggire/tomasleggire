@@ -41,7 +41,7 @@ export default function Services({ children }) {
   };
 
   return (
-    <>
+    <div name="services">
       <div className="services-main">
         <button
           onClick={() => slider?.current?.slickPrev()}
@@ -65,6 +65,6 @@ export default function Services({ children }) {
       </div>
       <button className="btn-learn-more">Learn more</button>
       {children}
-    </>
+    </div>
   );
 }

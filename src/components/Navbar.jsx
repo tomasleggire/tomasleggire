@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/Navbar.scss';
 import { MdAccountBox } from "react-icons/md";
 import { MdOutlineFormatListBulleted } from "react-icons/md";
+import { Link } from "react-scroll";
 
 export default function Navbar({ isVisible }) {
 
@@ -9,20 +10,26 @@ export default function Navbar({ isVisible }) {
         <header className={`nav-main ${!isVisible ? 'visible' : ''}`}>
             <nav className='nav'>
                 <div className='name-title'>
-                    <MdAccountBox className='title-icon'/>
+                    <MdAccountBox className='title-icon' />
                     <h3 className='title-h3'>tomás.me</h3>
                 </div>
                 <MdOutlineFormatListBulleted className='nav-menu-icon' />
                 <div className='nav-links'>
                     <ul>
-                        <li className='nav-li'>
-                            SERVICES
+                        <li>
+                            <Link activeClass='active' smooth spy to="services" className='nav-li' offset={-100}>
+                                SERVICES
+                            </Link>
                         </li>
-                        <li className='nav-li'>
-                            PORTFOLIO
+                        <li>
+                            <Link activeClass='active' smooth spy to="portfolio" className='nav-li' offset={-100}>
+                                PORTFOLIO
+                            </Link>
                         </li>
-                        <li className='nav-li'>
-                            CONTACT
+                        <li>
+                            <Link activeClass='active' smooth spy to="contact" className='nav-li' offset={-100}>
+                                CONTACT
+                            </Link>
                         </li>
                     </ul>
                 </div>
