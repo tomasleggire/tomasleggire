@@ -1,0 +1,225 @@
+@import "vars";
+
+.portfolio-main {
+    width: 100%;
+    height: 100vh;
+    margin-top: 40px;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.background-portfolio {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    top: 1;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: rgb(74,180,223);
+    overflow: hidden;
+    background: -moz-linear-gradient(329deg, rgba(74,180,223,1) 14%, rgb(53, 127, 224) 90%);
+background: -webkit-linear-gradient(329deg, rgba(74,180,223,1) 14%, rgb(53, 127, 224) 90%);
+background: linear-gradient(329deg, rgba(74,180,223,1) 14%, rgb(53, 127, 224) 90%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ab4df",endColorstr="#ecf9f5",GradientType=1);
+}
+.background-portfolio li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 50s linear infinite;
+}
+
+
+
+
+.background-portfolio li:nth-child(0) {
+    left: 19%;
+    width: 109px;
+    height: 109px;
+    bottom: -109px;
+    animation-delay: 1s;
+}
+.background-portfolio li:nth-child(1) {
+    left: 16%;
+    width: 166px;
+    height: 166px;
+    bottom: -166px;
+    animation-delay: 4s;
+}
+.background-portfolio li:nth-child(2) {
+    left: 83%;
+    width: 154px;
+    height: 154px;
+    bottom: -154px;
+    animation-delay: 5s;
+}
+.background-portfolio li:nth-child(3) {
+    left: 69%;
+    width: 132px;
+    height: 132px;
+    bottom: -132px;
+    animation-delay: 15s;
+}
+.background-portfolio li:nth-child(4) {
+    left: 32%;
+    width: 117px;
+    height: 117px;
+    bottom: -117px;
+    animation-delay: 20s;
+}
+.background-portfolio li:nth-child(5) {
+    left: 22%;
+    width: 125px;
+    height: 125px;
+    bottom: -125px;
+    animation-delay: 25s;
+}
+.background-portfolio li:nth-child(6) {
+    left: 4%;
+    width: 159px;
+    height: 159px;
+    bottom: -159px;
+    animation-delay: 17s;
+}
+.background-portfolio li:nth-child(7) {
+    left: 51%;
+    width: 180px;
+    height: 180px;
+    bottom: -180px;
+    animation-delay: 6s;
+}
+.background-portfolio li:nth-child(8) {
+    left: 64%;
+    width: 108px;
+    height: 108px;
+    bottom: -108px;
+    animation-delay: 1s;
+}
+.background-portfolio li:nth-child(9) {
+    left: 29%;
+    width: 178px;
+    height: 178px;
+    bottom: -178px;
+    animation-delay: 2s;
+}
+.background-portfolio li:nth-child(10) {
+    left: 50%;
+    width: 167px;
+    height: 167px;
+    bottom: -167px;
+    animation-delay: 41s;
+}
+.background-portfolio li:nth-child(11) {
+    left: 57%;
+    width: 189px;
+    height: 189px;
+    bottom: -189px;
+    animation-delay: 1s;
+}
+.background-portfolio li:nth-child(12) {
+    left: 63%;
+    width: 164px;
+    height: 164px;
+    bottom: -164px;
+    animation-delay: 14s;
+}
+.background-portfolio li:nth-child(13) {
+    left: 10%;
+    width: 172px;
+    height: 172px;
+    bottom: -172px;
+    animation-delay: 49s;
+}
+.background-portfolio li:nth-child(14) {
+    left: 1%;
+    width: 143px;
+    height: 143px;
+    bottom: -143px;
+    animation-delay: 2s;
+}
+.background-portfolio li:nth-child(15) {
+    left: 26%;
+    width: 139px;
+    height: 139px;
+    bottom: -139px;
+    animation-delay: 22s;
+}
+.background-portfolio li:nth-child(16) {
+    left: 11%;
+    width: 130px;
+    height: 130px;
+    bottom: -130px;
+    animation-delay: 66s;
+}
+.background-portfolio li:nth-child(17) {
+    left: 57%;
+    width: 140px;
+    height: 140px;
+    bottom: -140px;
+    animation-delay: 29s;
+}
+.background-portfolio li:nth-child(18) {
+    left: 52%;
+    width: 112px;
+    height: 112px;
+    bottom: -112px;
+    animation-delay: 69s;
+}
+.background-portfolio li:nth-child(19) {
+    left: 77%;
+    width: 186px;
+    height: 186px;
+    bottom: -186px;
+    animation-delay: 40s;
+}
+.background-portfolio li:nth-child(20) {
+    left: 53%;
+    width: 129px;
+    height: 129px;
+    bottom: -129px;
+    animation-delay: 53s;
+}
+.background-portfolio li:nth-child(21) {
+    left: 81%;
+    width: 141px;
+    height: 141px;
+    bottom: -141px;
+    animation-delay: 103s;
+}
+.background-portfolio li:nth-child(22) {
+    left: 9%;
+    width: 177px;
+    height: 177px;
+    bottom: -177px;
+    animation-delay: 38s;
+}
+.background-portfolio li:nth-child(23) {
+    left: 75%;
+    width: 169px;
+    height: 169px;
+    bottom: -169px;
+    animation-delay: 66s;
+}
+.background-portfolio li:nth-child(24) {
+    left: 21%;
+    width: 176px;
+    height: 176px;
+    bottom: -176px;
+    animation-delay: 30s;
+}
