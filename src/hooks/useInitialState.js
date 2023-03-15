@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import imageOne from '../icons/cell-phone-svgrepo-com.svg';
 import imageTwo from '../icons/book-svgrepo-com.svg';
 import imageThree from '../icons/official-document-svgrepo-com.svg';
@@ -39,9 +40,17 @@ const useInitialState = () => {
             title: 'MOBILE-FRIENDLY'
         }
     ]
+
+    const [navState, setNavState] = useState({
+        services: false,
+        portfolio: false,
+        contact: false
+    })
     
     return {
         optionsState,
+        navState,
+        setNavState
     }
     
 }
