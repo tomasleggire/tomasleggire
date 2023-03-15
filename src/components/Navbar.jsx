@@ -1,12 +1,9 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import '../styles/Navbar.scss';
 import { MdAccountBox } from "react-icons/md";
 import { MdOutlineFormatListBulleted } from "react-icons/md";
-import AppContext from '../context/AppContext';
 
 export default function Navbar({ isVisible }) {
-
-    const { navState } = useContext(AppContext);
 
     return (
         <header className={`nav-main ${!isVisible ? 'visible' : ''}`}>
@@ -18,13 +15,13 @@ export default function Navbar({ isVisible }) {
                 <MdOutlineFormatListBulleted className='nav-menu-icon' />
                 <div className='nav-links'>
                     <ul>
-                        <li className={`nav-li ${navState.services ? 'nav-visible' : ''}`}>
+                        <li className='nav-li'>
                             SERVICES
                         </li>
-                        <li className={`nav-li ${navState.portfolio ? 'nav-visible' : ''}`}>
+                        <li className='nav-li'>
                             PORTFOLIO
                         </li>
-                        <li className={`nav-li ${navState.contact ? 'nav-visible' : ''}`}>
+                        <li className='nav-li'>
                             CONTACT
                         </li>
                     </ul>

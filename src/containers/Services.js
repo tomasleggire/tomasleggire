@@ -5,11 +5,9 @@ import Slider from "react-slick";
 import Option from "../components/Option";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import useElementOnScreen from "../hooks/useElementOnScreen";
 
-
-export default function Services({children}) {
-  const { optionsState, setNavState } = useContext(AppContext);
+export default function Services({ children }) {
+  const { optionsState } = useContext(AppContext);
 
   const slider = useRef(null);
 
