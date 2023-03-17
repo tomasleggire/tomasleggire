@@ -30,7 +30,7 @@ function App() {
           <MoreInfo />
         </Services>
         <Portfolio>
-          <h1 className="p-h1">PORTOFLIO</h1>
+          
         </Portfolio>
       </div>
     </AppContext.Provider>
