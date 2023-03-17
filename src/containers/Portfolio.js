@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/Portfolio.scss";
 
-export default function Portfolio({ children }) {
+export default function Portfolio() {
   return (
     <div className="portfolio-main" name="portfolio">
-      <h1 className="p-h1">PORTOFLIO</h1>
+      <h1 className="h1-portfolio">My Work</h1>
       <div class="container">
         <div class="cards">
           <div class="card">1</div>

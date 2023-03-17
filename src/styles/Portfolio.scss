@@ -3,8 +3,8 @@
 .portfolio-main {
     width: 100%;
     height: auto;
-    margin-top: 40px;
     display: flex;
+    margin-top: 60px;
     flex-direction: column;
     align-items: center;
     background: -moz-linear-gradient(329deg, rgba(74,180,223,1) 14%, rgb(53, 127, 224) 90%);
@@ -13,13 +13,12 @@ background: linear-gradient(329deg, rgba(74,180,223,1) 14%, rgb(53, 127, 224) 90
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ab4df",endColorstr="#ecf9f5",GradientType=1);
 }
 
-
-.p-h1 {
-    color: var(--special-white);
-    text-align: center;
-    margin-top: 60px;
-    margin-bottom: 30px;
-  }
+.h1-portfolio {
+  color: var(--special-white);
+  margin-top: 60px;
+  font-size: 42px;
+  text-decoration: underline;
+}
 
 //GRID
 
@@ -27,6 +26,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ab4df",endCo
     display: flex;
     justify-content: center;
     width: 100%;
+    margin: 60px 0 30px 0;
   }
   
   .cards {
@@ -34,7 +34,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ab4df",endCo
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 15px;
-    padding: 20px;
+    padding: 20px 40px;
     margin: 20px;
   }
   
@@ -49,13 +49,28 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ab4df",endCo
   }
 
 @media only screen and (max-width: 915px) {
+  .container {
+    margin: 30px 0 30px 0;
+  }
+  .h1-portfolio {
+    margin-top: 60px;
+    font-size: 32px;
+  }
     .cards {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 20px 10px;
       }
 }
 
 @media only screen and (max-width: 300px) {
+  .container {
+    margin: 20px 0 20px 0;
+  }
+  .h1-portfolio {
+    font-size: 22px;
+  }
     .cards {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 20px 5px;
       }
 }
