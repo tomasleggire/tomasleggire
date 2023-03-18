@@ -29,9 +29,7 @@ function App() {
         <Services>
           <MoreInfo />
         </Services>
-        <Portfolio>
-          
-        </Portfolio>
+        <Portfolio />
       </div>
     </AppContext.Provider>
   );

@@ -3,6 +3,6 @@ import '../styles/PortfolioItem.scss';
 
 export default function PortfolioItem({text}) {
     return (
-        <div class="card-item">{text}</div>
+        <div className="card-item">{text}</div>
     )
 }
