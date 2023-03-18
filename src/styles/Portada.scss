@@ -40,16 +40,13 @@
 .portada-btn {
     background: none;
     border: none;
-    background: rgb(190,91,30);
-background: -moz-linear-gradient(0deg, rgba(190,91,30,1) 25%, rgba(209,140,36,1) 95%);
-background: -webkit-linear-gradient(0deg, rgba(190,91,30,1) 25%, rgba(209,140,36,1) 95%);
-background: linear-gradient(0deg, rgba(190,91,30,1) 25%, rgba(209,140,36,1) 95%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#be5b1e",endColorstr="#d18c24",GradientType=1);
+    background: rgb(246,90,55);
+background: linear-gradient(0deg, rgba(246,90,55,1) 25%, rgba(238,119,68,1) 95%);
     margin: 0 auto;
     margin-top: 32px;
     width: 150px;
     height: 50px;
-    color: var(--special-white);
+    color: var(--white);
     cursor: pointer;
     border-radius: 25px;
     display: flex;
@@ -66,7 +63,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#be5b1e",endCo
 }
 
 .portada-btn:hover {
-    background: rgb(226, 123, 59);
+    background: rgb(255, 138, 60);
     color: white;
 }
 
