@@ -28,11 +28,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ab4df",endCo
     width: 100%;
     margin: 60px 0 30px 0;
     opacity: 0;
-    transition: .7s;
+    transition: 1.8s;
+    padding-top: 100px;
   }
 
   .container-visible {
     opacity: 1;
+    padding-top: 0;
   }
   
   .cards {
@@ -49,7 +51,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ab4df",endCo
 @media only screen and (max-width: 915px) {
   .container {
     margin: 30px 0 30px 0;
-    opacity: 1;
   }
   .h1-portfolio {
     margin-top: 60px;

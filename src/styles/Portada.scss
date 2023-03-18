@@ -40,11 +40,11 @@
 .portada-btn {
     background: none;
     border: none;
-    background: rgb(16,106,161);
-background: -moz-linear-gradient(0deg, rgba(16,106,161,1) 25%, rgba(26,130,193,1) 87%);
-background: -webkit-linear-gradient(0deg, rgba(16,106,161,1) 25%, rgba(26,130,193,1) 87%);
-background: linear-gradient(0deg, rgba(16,106,161,1) 25%, rgba(26,130,193,1) 87%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#106aa1",endColorstr="#1a82c1",GradientType=1);
+    background: rgb(190,91,30);
+background: -moz-linear-gradient(0deg, rgba(190,91,30,1) 25%, rgba(209,140,36,1) 95%);
+background: -webkit-linear-gradient(0deg, rgba(190,91,30,1) 25%, rgba(209,140,36,1) 95%);
+background: linear-gradient(0deg, rgba(190,91,30,1) 25%, rgba(209,140,36,1) 95%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#be5b1e",endColorstr="#d18c24",GradientType=1);
     margin: 0 auto;
     margin-top: 32px;
     width: 150px;
@@ -55,7 +55,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#106aa1",endCo
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .3s;
     box-shadow: 0px 1px 7px -3px rgba(0,0,0,0.75);
 -webkit-box-shadow: 0px 1px 7px -3px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 1px 7px -3px rgba(0,0,0,0.75);
@@ -67,7 +66,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#106aa1",endCo
 }
 
 .portada-btn:hover {
-    letter-spacing: 1px;
+    background: rgb(226, 123, 59);
+    color: white;
 }
 
 @media only screen and (max-width: 1000px) {

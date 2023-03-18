@@ -11,7 +11,7 @@ export default function Portfolio() {
   const [containerRef, isVisible] = useElementOnScreen({
     root: null,
     rootMargin: "0px",
-    threshold: .2,
+    threshold: 0,
   });
 
   return (
