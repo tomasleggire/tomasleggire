@@ -2,9 +2,37 @@
 
 .card-item {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
   color: rgb(0, 0, 0);
   height: 350px;
+  margin: 20px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.item-h1 {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 915px) {
+  .card-item {
+    margin: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 695px) {
+  .card-item {
+    margin-bottom: 20%;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .card-item {
+    margin-bottom: 5%;
+  }
 }

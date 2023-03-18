@@ -21,7 +21,7 @@ export default function Portfolio() {
         <div className="cards">
           {portfolioItems.map((item) => {
             return (
-              <PortfolioItem id={item.ide} text={item.text}/>
+              <PortfolioItem id={item.id} image={item.image} title={item.title} text={item.text}/>
             )
           })}
         </div>
