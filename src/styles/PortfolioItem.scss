@@ -7,20 +7,37 @@
   align-items: center;
   background-color: rgba(255, 255, 255, 0);
   color: rgb(0, 0, 0);
-  height: 350px;
+  // height: 350px;
+  height: auto;
   margin: 20px;
   margin-bottom: 40px;
+  color: var(--special-white);
+}
+
+.image-item {
   cursor: pointer;
+  transition: .3s;
+  max-width: auto;
+  padding: 0 10px;
+}
+
+.image-item:hover {
+  transform: scale(1.05);
+  rotate: 3deg;
 }
 
 .item-h1 {
   margin-top: 20px;
 }
 
+.item-text {
+  font-size: var(--lg);
+}
+
 @media only screen and (max-width: 915px) {
   .card-item {
     margin: 0;
-    margin-bottom: 0;
+    margin-bottom: 40px;
   }
 }
 
@@ -30,9 +47,3 @@
   }
 }
 
-
-@media only screen and (max-width: 500px) {
-  .card-item {
-    margin-bottom: 5%;
-  }
-}
