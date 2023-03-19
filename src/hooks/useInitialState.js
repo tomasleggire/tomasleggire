@@ -6,6 +6,7 @@ import imageFive from '../icons/ppt-icon-application-svgrepo-com.svg';
 import imageSix from '../icons/tick-svgrepo-com.svg';
 
 import imagePortOne from '../images/imagesPortfolio/vecteezy_computer-laptop-with-transparent-screen_8854312_335.png';
+import imagenUno from '../images/imagesPortfolio/itemPort1.png';
 
 
 const useInitialState = () => {
@@ -45,8 +46,8 @@ const useInitialState = () => {
     const portfolioItems = [
         {
             id: 1,
-            image: imagePortOne,
-            title: 'Mobile First',
+            image: imagenUno,
+            title: 'C.R.U.D',
             text: 'Web design/development' 
         },
         {
