@@ -5,8 +5,10 @@ import imageFour from '../icons/pencil-svgrepo-com.svg';
 import imageFive from '../icons/ppt-icon-application-svgrepo-com.svg';
 import imageSix from '../icons/tick-svgrepo-com.svg';
 
-import imagePortOne from '../images/imagesPortfolio/vecteezy_computer-laptop-with-transparent-screen_8854312_335.png';
 import imagenUno from '../images/imagesPortfolio/itemPort1.png';
+import imagenDos from '../images/imagesPortfolio/itemPort2.png';
+import imagenTres from '../images/imagesPortfolio/itemPort3.png';
+import imagenCuatro from '../images/imagesPortfolio/itemPort4.png';
 
 
 const useInitialState = () => {
@@ -52,67 +54,67 @@ const useInitialState = () => {
         },
         {
             id: 2,
-            image: imagePortOne,
-            title: 'Mobile First',
+            image: imagenDos,
+            title: 'Weather React App',
             text: 'Web design/development'
         },
         {
             id: 3,
-            image: imagePortOne,
-            title: 'Mobile First',
+            image: imagenTres,
+            title: ' Ecommerce Product Page',
             text: 'Web design/development'
         },
         {
             id: 4,
-            image: imagePortOne,
-            title: 'Mobile First',
+            image: imagenCuatro,
+            title: 'Interactive Card Form',
             text: 'Web design/development'
         },
         {
             id: 5,
-            image: imagePortOne,
+            image: imagenUno,
             title: 'Mobile First',
             text: 'Web design/development'
         },
         {
             id: 6,
-            image: imagePortOne,
+            image: imagenUno,
             title: 'Mobile First',
             text: 'Web design/development'
         },
         {
             id: 7,
-            image: imagePortOne,
+            image: imagenUno,
             title: 'Mobile First',
             text: 'Web design/development'
         },
         {
             id: 8,
-            image: imagePortOne,
+            image: imagenUno,
             title: 'Mobile First',
             text: 'Web design/development'
         },
         {
             id: 9,
-            image: imagePortOne,
+            image: imagenUno,
             title: 'Mobile First',
             text: 'Web design/development'
         },
         {
             id: 10,
-            image: imagePortOne,
+            image: imagenUno,
             title: 'Mobile First',
             text: 'Web design/development'
         },
         {
             id: 11,
-            image: imagePortOne,
+            image: imagenUno,
             title: 'Mobile First',
             text: 'Web design/development'
         },
         {
             id: 12,
-            image: imagePortOne,
+            image: imagenUno,
             title: 'Mobile First',
             text: 'Web design/development'
         },

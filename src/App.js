@@ -10,8 +10,6 @@ import useInitialState from "./hooks/useInitialState";
 import MoreInfo from "./components/MoreInfo";
 import Portfolio from "./containers/Portfolio";
 
-// import perro from './images/Xqg8.gif';
-
 function App() {
   const initialState = useInitialState();
 

@@ -16,7 +16,6 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio-main" name="portfolio" ref={containerRef}>
-      <h1 className="h1-portfolio">My Work</h1>
       <div className={`container ${isVisible ? 'container-visible' : ''}`}>
         <div className="cards">
           {portfolioItems.map((item) => {
