@@ -1,12 +1,15 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "../styles/Portfolio.scss";
 import PortfolioItem from "../components/PortfolioItem";
 import AppContext from "../context/AppContext";
 import useElementOnScreen from "../hooks/useElementOnScreen";
+import ModalItemPort from "./ModalItemPort";
 
 export default function Portfolio() {
 
   const { portfolioItems } = useContext(AppContext);
+
+  const [modalItemValue, setModalItemValue] = useState(false);
 
   const [containerRef, isVisible] = useElementOnScreen({
     root: null,
@@ -20,11 +23,18 @@ export default function Portfolio() {
         <div className="cards">
           {portfolioItems.map((item) => {
             return (
-              <PortfolioItem id={item.id} image={item.image} title={item.title} text={item.text}/>
+              <PortfolioItem 
+                id={item.id} 
+                image={item.image} 
+                title={item.title} 
+                text={item.text}
+                setModalItemValue={setModalItemValue}
+              />
             )
           })}
         </div>
       </div>
+      {modalItemValue && <ModalItemPort setModalItemValue={setModalItemValue}/>}
     </div>
   );
 }

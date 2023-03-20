@@ -10,6 +10,7 @@ import useInitialState from "./hooks/useInitialState";
 import MoreInfo from "./components/MoreInfo";
 import Portfolio from "./containers/Portfolio";
 
+
 function App() {
   const initialState = useInitialState();
 
