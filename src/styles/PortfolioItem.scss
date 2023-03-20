@@ -26,12 +26,21 @@
 
 .item-h1 {
   margin-top: 20px;
-  color: var(--blue-tres);
+  color: var(--special-white);
+  background: -moz-linear-gradient(329deg, rgba(74,180,223,1) 14%, rgb(53, 127, 224) 90%);
+background: -webkit-linear-gradient(329deg, rgba(74,180,223,1) 14%, rgb(53, 127, 224) 90%);
+background: linear-gradient(329deg, rgba(74,180,223,1) 14%, rgb(53, 127, 224) 90%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ab4df",endColorstr="#ecf9f5",GradientType=1);
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: var(--lg);
 }
 
 .item-text {
-  font-size: var(--lg);
-  color: gray;
+  font-size: var(--md);
+  color: var(--black);
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 915px) {
