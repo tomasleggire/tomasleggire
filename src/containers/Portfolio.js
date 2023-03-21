@@ -34,7 +34,7 @@ export default function Portfolio() {
           })}
         </div>
       </div>
-      {modalItemValue && <ModalItemPort setModalItemValue={setModalItemValue}/>}
+        {modalItemValue && <ModalItemPort setModalItemValue={setModalItemValue} />} 
     </div>
   );
 }
