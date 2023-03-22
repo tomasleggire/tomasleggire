@@ -19,7 +19,11 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio-main" name="portfolio" ref={containerRef}>
-      <div className={`container ${isVisible ? "container-visible" : ""}`}>
+      <div
+        className={`container-portfolio ${
+          isVisible ? "container-visible" : ""
+        }`}
+      >
         <div className="cards">
           {portfolioItems.map((item) => {
             return (
@@ -41,6 +45,17 @@ export default function Portfolio() {
           mainItemModalPort={mainItemModalPort}
         />
       )}
+      <p className="p-github">
+        Click{" "}
+        <a
+          className="a-github"
+          href="https://github.com/tomasleggire"
+          target="_blank"
+        >
+          HERE
+        </a>
+        {' '}to see my all repositories
+      </p>
     </div>
   );
 }
