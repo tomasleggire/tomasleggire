@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import '../styles/ModalItemPort.scss';
+import { MdClear } from "react-icons/md";
 
-export default function ModalItemPort({ setModalItemValue }) {
+export default function ModalItemPort({ setModalItemValue, mainItemModalPort }) {
 
     const [opacityValue, setOpacityValue] = useState(false);
 
@@ -16,13 +17,19 @@ export default function ModalItemPort({ setModalItemValue }) {
         <div className={`main-modal-port ${opacityValue ? 'close-modal-port' : ''}`}>
             <div className='modal-port-container'>
                 <div className="modal-port">
-                    <div className="port-image">
+                    <div className="port-image-div">
+                        <img src={mainItemModalPort.image} className='port-image'/>
                     </div>
                     <div className="port-text">
-                        LALALALA
+                        <h1 className="modal-item-h1">{mainItemModalPort.title}</h1>
+                        <h3 className="modal-item-h3">{mainItemModalPort.text}</h3>
+                        <p className="modal-item-p">{mainItemModalPort.parrafe}</p>
+                    <button className="modal-item-btn">VIEW WEBSITE</button>
                     </div>
                 </div>
-                <button onClick={handleCloseModal}>CLOSE</button>
+                <button className="modal-item-closeBtn" onClick={handleCloseModal}>
+                    <MdClear className="closeBtn-icon"/>
+                </button>
             </div>
         </div>
     )

@@ -16,12 +16,16 @@
 
 .modal-port-container {
     width: 70%;
-    height: 58%;
+    height: 50%;
     background-color: var(--special-white);
     border-radius: 5px;
     box-shadow: 0 0px 30px -5px var(--black);
     animation: entrance .5s ease 0s 1 normal forwards;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-port {
@@ -30,21 +34,88 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+.port-image-div {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    animation: entrance-image .5s ease-in 0s 1 normal backwards;
 }
 
 .port-image {
-    width: 60%;
+    object-fit: cover;
+    width: 100%;
     height: 100%;
-    background-color: red;
-    animation: entrance-image .5s ease-in 0s 1 normal backwards;
+    box-shadow: 0 0px 10px -5px var(--black);
 }
 
 .port-text {
     width: 40%;
     height: 100%;
-    background-color: blue;
+    text-align: left;
+    padding: 0 3%;
 }
 
+.modal-item-h1 {
+    margin-bottom: 10px;
+    color: var(--blue-tres);
+    font-weight: 400;
+}
+
+.modal-item-h3 {
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: var(--black);
+}
+
+.modal-item-p {
+    color: var(--black);
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.modal-item-btn {
+    border: none;
+    background: none;
+    margin-top: 40px;
+    font-size: var(--md);
+    color: var(--special-white);
+    background-color: var(--blue-tres);
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.modal-item-btn:hover {
+    background-color: var(--blue);
+}
+
+.modal-item-closeBtn {
+    border: none;
+    background: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--blue-tres);
+    border-top-left-radius: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.closeBtn-icon {
+    width: 25px;
+    height: 25px;
+    color: var(--special-white);
+}
+ 
 .close-modal-port {
     opacity: 0;
 }

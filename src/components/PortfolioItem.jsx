@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/PortfolioItem.scss';
 
-export default function PortfolioItem({ id, image, title, text, setModalItemValue }) {
+export default function PortfolioItem({ id, image, title, text, setModalItemValue, setMainItemModalPort }) {
     return (
         <div className="card-item">
             <img 
