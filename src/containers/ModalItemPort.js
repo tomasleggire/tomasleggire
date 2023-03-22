@@ -9,12 +9,19 @@ export default function ModalItemPort({ setModalItemValue }) {
         setOpacityValue(true);
         setTimeout(() => {
             setModalItemValue(false);
-        }, 600);
+        }, 500);
     }
 
     return (
         <div className={`main-modal-port ${opacityValue ? 'close-modal-port' : ''}`}>
-            <div className='modal-port'>
+            <div className='modal-port-container'>
+                <div className="modal-port">
+                    <div className="port-image">
+                    </div>
+                    <div className="port-text">
+                        LALALALA
+                    </div>
+                </div>
                 <button onClick={handleCloseModal}>CLOSE</button>
             </div>
         </div>
