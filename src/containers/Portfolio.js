@@ -6,8 +6,8 @@ import useElementOnScreen from "../hooks/useElementOnScreen";
 import ModalItemPort from "./ModalItemPort";
 
 export default function Portfolio() {
-
-  const { portfolioItems, mainItemModalPort, setMainItemModalPort } = useContext(AppContext);
+  const { portfolioItems, mainItemModalPort, changeMainModalItem } =
+    useContext(AppContext);
 
   const [modalItemValue, setModalItemValue] = useState(false);
 
@@ -19,27 +19,28 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio-main" name="portfolio" ref={containerRef}>
-      <div className={`container ${isVisible ? 'container-visible' : ''}`}>
+      <div className={`container ${isVisible ? "container-visible" : ""}`}>
         <div className="cards">
           {portfolioItems.map((item) => {
             return (
-              <PortfolioItem 
-                id={item.id} 
-                image={item.image} 
-                title={item.title} 
+              <PortfolioItem
+                id={item.id}
+                image={item.image}
+                title={item.title}
                 text={item.text}
                 setModalItemValue={setModalItemValue}
-                setMainItemModalPort={setMainItemModalPort}
+                changeMainModalItem={changeMainModalItem}
               />
-            )
+            );
           })}
         </div>
       </div>
-        {modalItemValue && <ModalItemPort 
-                              setModalItemValue={setModalItemValue}
-                              mainItemModalPort={mainItemModalPort}
-                           />
-        } 
+      {modalItemValue && (
+        <ModalItemPort
+          setModalItemValue={setModalItemValue}
+          mainItemModalPort={mainItemModalPort}
+        />
+      )}
     </div>
   );
 }

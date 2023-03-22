@@ -14,6 +14,7 @@ import imagenCuatro from "../images/imagesPortfolio/itemPort4.png";
 import imagenModalUno from '../images/imagesModalPortfolio/item1.PNG';
 import imagenModalDos from '../images/imagesModalPortfolio/item2.PNG';
 import imagenModalTres from '../images/imagesModalPortfolio/item3.PNG';
+import imagenModalCuatro from '../images/imagesModalPortfolio/item4.PNG';
 
 const useInitialState = () => {
   const optionsState = [
@@ -68,8 +69,8 @@ const useInitialState = () => {
       title: "Weather React App",
       text: "Web design/development",
       modal: {
-        image: imagenUno,
-        title: "C.R.U.D",
+        image: imagenModalDos,
+        title: "Weather React App",
         text: "Web design/development",
         parrafe : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum."
       },
@@ -77,11 +78,11 @@ const useInitialState = () => {
     {
       id: 3,
       image: imagenTres,
-      title: " Ecommerce Product Page",
+      title: "Ecommerce Product Page",
       text: "Web design/development",
       modal: {
-        image: imagenUno,
-        title: "C.R.U.D",
+        image: imagenModalTres,
+        title: "Ecommerce Product Page",
         text: "Web design/development",
         parrafe : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum."
       },
@@ -92,8 +93,8 @@ const useInitialState = () => {
       title: "Interactive Card Form",
       text: "Web design/development",
       modal: {
-        image: imagenUno,
-        title: "C.R.U.D",
+        image: imagenModalCuatro,
+        title: "Interactive Card Form",
         text: "Web design/development",
         parrafe : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum."
       },
@@ -201,13 +202,22 @@ const useInitialState = () => {
       title: "C.R.U.D",
       text: "Web design/development",
       parrafe : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum."
-  })
+  });
+
+  const changeMainModalItem = (id) => {
+    const indexItem = portfolioItems.findIndex((item) => item.id === id);
+    const newMainItem = {
+      ...portfolioItems[indexItem].modal
+    }
+    setMainItemModalPort(newMainItem);
+  }
 
   return {
     optionsState,
     portfolioItems,
     mainItemModalPort,
-    setMainItemModalPort
+    setMainItemModalPort,
+    changeMainModalItem
   };
 };
 export default useInitialState;
