@@ -44,14 +44,10 @@
     grid-gap: 15px;
     padding: 20px 40px;
     margin: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
-  .p-github {
-    font-size: var(--lg);
-    margin-bottom: 50px;
-    font-weight: 600;
-  }
   
   /* Style the cards */
   
@@ -62,7 +58,8 @@
     .cards {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         padding: 20px 10px;
-        margin-bottom: 20px;
+        margin-bottom: 0;
+    padding-bottom: 0;
       }
 }
 
@@ -73,5 +70,7 @@
     .cards {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         padding: 20px 5px;
+        margin-bottom: 0;
+    padding-bottom: 0;
       }
 }

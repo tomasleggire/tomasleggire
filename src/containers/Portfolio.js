@@ -45,17 +45,6 @@ export default function Portfolio() {
           mainItemModalPort={mainItemModalPort}
         />
       )}
-      <p className="p-github">
-        Click{" "}
-        <a
-          className="a-github"
-          href="https://github.com/tomasleggire"
-          target="_blank"
-        >
-          HERE
-        </a>
-        {' '}to see my all repositories
-      </p>
     </div>
   );
 }

@@ -29,7 +29,7 @@ export default function Navbar({ isVisible }) {
                             </Link>
                         </li>
                         <li>
-                            <Link activeClass='active' smooth spy to="contact" className='nav-li' offset={-100}>
+                            <Link activeClass='active' smooth spy to="contact" className='nav-li' offset={-50}>
                                 CONTACT
                             </Link>
                         </li>

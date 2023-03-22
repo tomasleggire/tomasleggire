@@ -9,6 +9,7 @@ import AppContext from "./context/AppContext";
 import useInitialState from "./hooks/useInitialState";
 import MoreInfo from "./components/MoreInfo";
 import Portfolio from "./containers/Portfolio";
+import Contact from "./containers/Contact";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <MoreInfo />
         </Services>
         <Portfolio />
+        <Contact />
       </div>
     </AppContext.Provider>
   );
