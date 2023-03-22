@@ -197,7 +197,7 @@ const useInitialState = () => {
   ];
 
   const [mainItemModalPort, setMainItemModalPort] = useState({
-      image: imagenModalTres,
+      image: imagenModalDos,
       title: "C.R.U.D",
       text: "Web design/development",
       parrafe : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum."

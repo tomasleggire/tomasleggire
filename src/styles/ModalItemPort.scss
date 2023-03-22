@@ -16,7 +16,7 @@
 
 .modal-port-container {
     width: 70%;
-    height: 50%;
+    height: 70%;
     background-color: var(--special-white);
     border-radius: 5px;
     box-shadow: 0 0px 30px -5px var(--black);
@@ -34,11 +34,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .port-image-div {
-    width: 60%;
+    max-width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,4 +139,47 @@
         opacity: 1;
 		transform: scale(1);
 	}
+}
+
+@media only screen and (max-width: 1230px) {
+
+    .modal-item-h1 {
+        margin-bottom: 2px;
+    }
+    
+    .modal-item-h3 {
+        margin-bottom: 10px;
+    }
+    
+    .modal-item-p {
+        font-size: 18px;
+    }
+    .modal-item-btn {
+        margin-top: 30px;
+        font-size: var(--sm);
+        padding: 8px 15px;
+        border-radius: 5px;
+    }
+    
+}
+
+@media only screen and (max-width: 990px) {
+    .modal-port-container {
+        width: 85%;
+        height: auto;
+        padding: 20px;
+    }
+    .modal-port {
+        flex-direction: column;
+    }
+    .port-image-div {
+        max-width: 100%;
+        height: 100%;
+    }
+    .port-text {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+    
 }
