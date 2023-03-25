@@ -19,7 +19,8 @@ export default function Contact() {
       </p>
       <FormContact />
       </div>
-      <div className="footer-img"></div>
+      <div className="footer-img-desktop"></div>
+      <div className="footer-img-mobile"></div>
     </>
   );
 }
