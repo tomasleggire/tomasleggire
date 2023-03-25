@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Contact.scss";
+import FormContact from "../components/FormContact";
 
 export default function Contact() {
   return (
@@ -16,6 +17,7 @@ export default function Contact() {
         </a>
         {' '}to see my all repositories
       </p>
+      <FormContact />
       </div>
       <div className="footer-img"></div>
     </>
