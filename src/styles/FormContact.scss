@@ -19,13 +19,13 @@
     align-items: center;
     margin: auto;
     margin-top: 3rem;
-    max-width: 100%;
+    max-width: 55%;
 }
 
 .form-names {
     display: flex;
     align-items: center;
-    width: 55%;
+    width: 100%;
     justify-content: space-around;
 }
 
@@ -42,7 +42,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 0 10px;
+    padding: 0 10px;
     width: 100%;
 }
 
@@ -64,21 +64,68 @@
 -moz-box-shadow: 0px 0px 0px 2px rgba(7,152,242,0.5);
 }
 
+.form-message {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 20px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.form-msg-input {
+    width: 100%;
+    border: none;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: var(--lg);
+    padding: 8px 10px;
+    transition: .3s;
+    color: var(--black);
+    height: 120px;
+    resize: none;
+}
+
+.form-msg-input:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 2px rgba(7,152,242,0.5);
+-webkit-box-shadow: 0px 0px 0px 2px rgba(7,152,242,0.5);
+-moz-box-shadow: 0px 0px 0px 2px rgba(7,152,242,0.5);
+}
+
+.btn-send {
+    border: none;
+    background: none;
+    background-color: var(--blue-tres);
+    color: var(--special-white);
+    font-weight: 500;
+    font-size: var(--lg);
+    padding: 15px 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-send:hover {
+    background-color: #07314b;
+}
+
 @media only screen and (max-width: 1100px) {
-    .form-names {
-        width: 75%;
+    .form-contact {
+        max-width: 75%;
     }
 }
 
 @media only screen and (max-width: 760px) {
     .form-contact {
         margin-top: 2rem;
+        max-width: 80%;
     }
     .form-names {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80%;
         justify-content: space-around;
     }
     .form-names-name, .form-names-email {
@@ -96,9 +143,7 @@
     }
     .form-contact {
         margin-top: 1rem;
-    }
-    .form-names {
-        width: 85%;
+        max-width: 85%;
     }
     .form-names-name, .form-names-email {
         margin: 5px 0;
@@ -106,5 +151,13 @@
     .input-name, .input-email {
         font-size: var(--lg);
         padding: 5px 8px;
-    }   
+    }
+    .form-msg-input {
+        height: 80px;
+    }
+    .btn-send {
+        font-size: var(--md);
+        padding: 12px 22px;
+        margin-top: 20px;
+    }
 }
