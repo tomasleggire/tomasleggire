@@ -20,15 +20,24 @@ export default function FormContact() {
     return (
         <div className="main-form">
             <h1 className="form-title">Get in touch</h1>
-            <form ref={form} onSubmit={sendEmail}>
-                <label>Name</label>
-                <input type="text" name="user_name" />
-                <label>Email</label>
-                <input type="email" name="user_email" />
-                <label>Message</label>
-                <textarea name="message" />
-                <input type="submit" value="Send" />
+            <form ref={form} onSubmit={sendEmail} className='form-contact'>
+                <div className='form-names'>
+                    <div className='form-names-name'>
+                        <label className='label'>NAME</label>
+                        <input type='text' name="user_name" className='input-name' />
+                    </div>
+                    <div className='form-names-email'>
+                        <label className='label'>EMAIL</label>
+                        <input type='text' name="user_email" className='input-email' />
+                    </div>
+                </div>
             </form>
         </div>
     )
 }
+
+{/* <form ref={form} onSubmit={sendEmail} className='form-contact'></form>
+name="user_name"
+name="user_email"
+name="message"
+<input type="submit" value="Send" className='btn-send' /> */}

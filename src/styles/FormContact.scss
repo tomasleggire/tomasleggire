@@ -1,12 +1,110 @@
 @import "vars";
 
 .main-form {
-    width: 45%;
+    max-width: 80%;
     min-height: auto;
     margin: auto;
-    outline: auto;
+    margin-top: 4rem;
 }
 
 .form-title {
     color: var(--black);
+    text-align: center;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 3rem;
+    max-width: 100%;
+}
+
+.form-names {
+    display: flex;
+    align-items: center;
+    width: 55%;
+    justify-content: space-around;
+}
+
+.label {
+    font-size: var(--sm);
+    color: gray;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.form-names-name, .form-names-email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 10px;
+    width: 100%;
+}
+
+.input-name, .input-email {
+    width: 100%;
+    border: none;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: var(--lg);
+    padding: 8px 10px;
+    transition: .3s;
+    color: var(--black);
+}
+
+.input-name:focus, .input-email:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 2px rgba(7,152,242,0.5);
+-webkit-box-shadow: 0px 0px 0px 2px rgba(7,152,242,0.5);
+-moz-box-shadow: 0px 0px 0px 2px rgba(7,152,242,0.5);
+}
+
+@media only screen and (max-width: 1100px) {
+    .form-names {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .form-contact {
+        margin-top: 2rem;
+    }
+    .form-names {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        justify-content: space-around;
+    }
+    .form-names-name, .form-names-email {
+        margin: 8px 0;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .main-form {
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+    .form-title {
+        font-size: var(--lg);
+    }
+    .form-contact {
+        margin-top: 1rem;
+    }
+    .form-names {
+        width: 85%;
+    }
+    .form-names-name, .form-names-email {
+        margin: 5px 0;
+    } 
+    .input-name, .input-email {
+        font-size: var(--lg);
+        padding: 5px 8px;
+    }   
 }
