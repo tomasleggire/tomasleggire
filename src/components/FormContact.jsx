@@ -24,16 +24,16 @@ export default function FormContact() {
                 <div className='form-names'>
                     <div className='form-names-name'>
                         <label className='label'>NAME</label>
-                        <input type='text' name="user_name" className='input-name' />
+                        <input type='text' name="user_name" className='input-name' required/>
                     </div>
                     <div className='form-names-email'>
                         <label className='label'>EMAIL</label>
-                        <input type='text' name="user_email" className='input-email' />
+                        <input type='email' name="user_email" className='input-email' required/>
                     </div>
                 </div>
                 <div className='form-message'>
                     <label className='label'>MESSAGE</label>
-                    <textarea name="message" className='form-msg-input' />
+                    <textarea name="message" className='form-msg-input' required/>
                 </div>
                 <input type="submit" value="Send" className='btn-send' />
             </form>
