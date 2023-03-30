@@ -25,28 +25,28 @@ const useInitialState = () => {
     },
     {
       image: imageTwo,
-      text: "A responsive design makes your website accessible to all users, regardless of their device",
-      title: "MOBILE-FRIENDLY",
+      text: "Proficiency in the core web technologies of HTML, CSS, and JavaScript",
+      title: "PROFICIENCY",
     },
     {
       image: imageThree,
-      text: "A responsive design makes your website accessible to all users, regardless of their device",
-      title: "MOBILE-FRIENDLY",
+      text: "Experience with React and ability to use it to build complex web applications",
+      title: "FRONT-END FRAMEWORKS",
     },
     {
       image: imageFour,
-      text: "A responsive design makes your website accessible to all users, regardless of their device",
-      title: "MOBILE-FRIENDLY",
+      text: "Web accessibility and ability to design and develop websites for everyone",
+      title: "WEB ACCESSIBILITY",
     },
     {
       image: imageFive,
-      text: "A responsive design makes your website accessible to all users, regardless of their device",
-      title: "MOBILE-FRIENDLY",
+      text: "Experience with version control systems like Git for managing and collaborating on projects",
+      title: "VERSION CONTROL",
     },
     {
       image: imageSix,
-      text: "A responsive design makes your website accessible to all users, regardless of their device",
-      title: "MOBILE-FRIENDLY",
+      text: "Ability to write unit tests for code and use testing frameworks to ensure code quality",
+      title: "TESTING",
     },
   ];
 

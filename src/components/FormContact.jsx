@@ -40,7 +40,7 @@ export default function FormContact() {
         setEmail('');
         setMessage('');
 
-        alert('Email enviado');
+        alert('Your email has been sent successfully!');
     };
 
     return (
