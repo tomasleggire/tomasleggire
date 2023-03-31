@@ -19,7 +19,7 @@ export default function Services({ children }) {
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: true,
+    autoplay: false,
     arrows: false,
     autoplaySpeed: 3000,
     responsive: [

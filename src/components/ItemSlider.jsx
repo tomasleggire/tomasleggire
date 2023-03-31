@@ -8,13 +8,13 @@ export default function ItemSlider() {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 1000,
+        speed: 2000,
         slidesToShow: 5,
         slidesToScroll: 1,
         initialSlide: 0,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 0,
     };
 
     const items = [

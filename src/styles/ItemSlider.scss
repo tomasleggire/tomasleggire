@@ -12,4 +12,10 @@
 
 .item-span-slider {
     font-weight: 700;
+    transition: .3s;
+}
+
+.item-span-slider:hover {
+    color: red;
+    transform: scale(1.5);
 }
