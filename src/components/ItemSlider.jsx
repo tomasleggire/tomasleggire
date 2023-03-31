@@ -2,6 +2,11 @@ import React, { useRef } from "react";
 import '../styles/ItemSlider.scss';
 import Slider from "react-slick";
 
+import html from '../images/imagesTechItems/html5.svg';
+import js from '../images/imagesTechItems/javascript.svg';
+import scss from '../images/imagesTechItems/sass.svg';
+import css from '../images/imagesTechItems/css3.svg';
+
 export default function ItemSlider() {
     const slider = useRef(null);
 
@@ -17,32 +22,42 @@ export default function ItemSlider() {
         autoplaySpeed: 0,
     };
 
-    const items = [
+    const itemsTech = [
         {
-            text: 'HTML'
+            text: 'HTML',
+            img: html
         },
         {
-            text:'SCCS'
+            text: 'CSS',
+            img: css
         },
         {
-            text: 'CSS'
+            text:'SASS',
+            img: scss
+        },
+        
+        {
+            text: 'JAVASCRIPT',
+            img: js
         },
         {
-            text: 'JAVASCRIPT'
+            text: 'REACT JS',
+            img: html
         },
         {
-            text: 'REACT JS'
-        },
-        {
-            text: 'REACT NAVITE'
+            text: 'REACT NAVITE',
+            img: html
         }
     ]
 
     return (
         <Slider {...settings} className="item-slider" ref={slider}>
-            {items.map((item) => {
+            {itemsTech.map((itemTech) => {
                 return (
-                    <span className="item-span-slider">{item.text}</span>
+                    <div className="item-container-slider">
+                        <img src={itemTech.img} className='item-slider-img'/>
+                        <span className="item-span-slider">{itemTech.text}</span>
+                    </div>
                 )
             })}
         </Slider>
