@@ -8,6 +8,8 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    
+    margin-bottom: 160px; //ESPACIO PARA EL SLIDER 2
 }
 
 .services-slider {
@@ -33,26 +35,6 @@
 .btn-option {
     width: 75px;
     height: 75px;
-}
-
-.btn-learn-more {
-    border: none;
-    background: none;
-    border: 1px solid var(--blue-secondary);
-    padding: 15px 30px;
-    border-radius: 30px;
-    margin-top: 25px;
-    font-size: var(--lg);
-    color: var(--blue-secondary);
-    cursor: pointer;
-    margin-bottom: 100px;
-    text-align: center;
-    transition: .2s;
-}
-
-.btn-learn-more:hover {
-    color: var(--white);
-    background-color: var(--blue-secondary);
 }
 
 @media only screen and (max-width: 1553px) {

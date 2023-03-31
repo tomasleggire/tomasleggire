@@ -5,7 +5,6 @@ import Slider from "react-slick";
 import Option from "../components/Option";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import { Link } from "react-scroll";
 
 export default function Services({ children }) {
   const { optionsState } = useContext(AppContext);
@@ -64,9 +63,6 @@ export default function Services({ children }) {
           <MdKeyboardArrowRight className="btn-option" />
         </button>
       </div>
-      <Link smooth to="portfolio" offset={-60}>
-        <button className="btn-learn-more">Learn more</button>
-      </Link>
       {children}
     </div>
   );
