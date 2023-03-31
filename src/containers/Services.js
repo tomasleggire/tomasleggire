@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import Option from "../components/Option";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import ItemSlider from "../components/ItemSlider";
 
 export default function Services({ children }) {
   const { optionsState } = useContext(AppContext);
@@ -63,6 +64,7 @@ export default function Services({ children }) {
           <MdKeyboardArrowRight className="btn-option" />
         </button>
       </div>
+      <ItemSlider />
       {children}
     </div>
   );
