@@ -55,8 +55,8 @@ export default function ItemSlider() {
             {itemsTech.map((itemTech) => {
                 return (
                     <div className="item-container-slider">
-                        <img src={itemTech.img} className='item-slider-img'/>
-                        <span className="item-span-slider">{itemTech.text}</span>
+                        <img src={itemTech.img} className='item-slider-img' alt={itemTech.text}/>
+                        {/* <span className="item-span-slider">{itemTech.text}</span> */}
                     </div>
                 )
             })}
