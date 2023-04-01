@@ -1,13 +1,12 @@
 @import 'vars';
 
 .item-slider {
-    max-width: 30%;
+    max-width: 40%;
     margin: auto;
     margin-top: 85px;
     margin-bottom: 50px;
     color: var(--black);
-    box-shadow: 0 0px 10px -5px var(--black);
-    border-radius: 10px;
+    border-bottom: 1px solid lightgray;
 }
 
 .item-container-slider {

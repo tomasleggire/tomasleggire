@@ -53,7 +53,7 @@ export default function Services({ children }) {
         <Slider {...settings} className="services-slider" ref={slider}>
           {optionsState.map((item) => {
             return (
-              <Option image={item.image} text={item.text} title={item.title} />
+              <Option image={item.image} text={item.text} title={item.title} key={item.title}/>
             );
           })}
         </Slider>
