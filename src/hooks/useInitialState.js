@@ -253,7 +253,7 @@ const useInitialState = () => {
   const changeMainModalItem = (id) => {
     const indexItem = portfolioItems.findIndex((item) => item.id === id);
     const newMainItem = {
-      ...portfolioItems[indexItem].modal,
+      ...portfolioItems[indexItem].modal
     };
     setMainItemModalPort(newMainItem);
   };
