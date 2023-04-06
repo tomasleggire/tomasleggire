@@ -28,7 +28,7 @@ export default function Portfolio() {
           {portfolioItems.map((item) => {
             return (
               <PortfolioItem
-                key={item.id}
+                id={item.id}
                 image={item.image}
                 title={item.title}
                 text={item.text}
