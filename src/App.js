@@ -24,10 +24,7 @@ function App() {
   return (
     <AppContext.Provider value={initialState}>
       <div className="App" ref={containerRef}>
-        <HomeContainer>
-          <Navbar isVisible={isVisible} />
-          <Portada />
-        </HomeContainer>
+        
         <Services>
           <MoreInfo />
         </Services>
