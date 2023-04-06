@@ -28,11 +28,7 @@ function App() {
           <Navbar isVisible={isVisible} />
           <Portada />
         </HomeContainer>
-        <Services>
-          <MoreInfo />
-        </Services>
-        <Portfolio />
-        <Contact />
+        
       </div>
     </AppContext.Provider>
   );
