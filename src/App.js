@@ -19,7 +19,9 @@ function App() {
     <AppContext.Provider value={initialState}>
       <Router>
         <Navbar />
-        <HomeContainer />
+        <Routes>
+          <Route path="/" element={<HomeContainer />} />
+        </Routes>
       </Router>
     </AppContext.Provider>
   );
