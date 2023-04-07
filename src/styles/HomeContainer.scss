@@ -26,10 +26,13 @@
 .img-me {
     width: 160px;
     border-radius: 50%;
-    background-color: var(--white);
-    padding: 2px;
+    background: linear-gradient(-45deg, #edd32d, #393939, #e9dea7, #ebd86a);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+    padding: 4px;
     margin-bottom: 20px;
 }
+
 
 .h1-home {
     color: var(--white);
@@ -83,4 +86,16 @@
   .h1-home {
     font-size: 36px;
   }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
