@@ -12,18 +12,22 @@ const iconsMedia = [
   {
     text: "Twitter",
     img: AiOutlineTwitter,
+    src: 'https://twitter.com/tomasleyi'
   },
   {
     text: "Linkedin",
     img: AiFillLinkedin,
+    src: 'https://www.linkedin.com/in/tom%C3%A1s-agust%C3%ADn-leggire-2a8b8b211/'
   },
   {
     text: "Github",
     img: AiFillGithub,
+    src: 'https://github.com/tomasleggire'
   },
   {
     text: "Instagram",
     img: AiOutlineInstagram,
+    src: 'https://www.instagram.com/tomasleyi/'
   },
 ];
 
@@ -63,7 +67,7 @@ export default function HomeContainer() {
         </p>
         <div className="icons-home">
           {iconsMedia.map((icon) => {
-            return <div>{<icon.img className="icon-home" />}</div>;
+            return <a href={icon.src} target="_blank">{<icon.img className="icon-home" />}</a>;
           })}
         </div>
       </div>

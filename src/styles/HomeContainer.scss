@@ -31,23 +31,29 @@
 	animation: gradient 5s ease infinite;
     padding: 4px;
     margin-bottom: 20px;
+    animation: aparicion 1s ease 0s 1 normal forwards;
+    opacity: 0;
 }
 
 
 .h1-home {
     color: var(--white);
     font-size: 46px;
+    animation: aparicion 1s ease .2s 1 normal forwards;
+    opacity: 0;
 }
 
 .span-home {
     color: var(--high-yellow);
-}
-
-.p-home {
+  }
+  
+  .p-home {
     color: var(--light-yellow);
     font-size: var(--lg);
     margin-top: 20px;
     font-weight: 600;
+    animation: aparicion 1s ease .4s 1 normal forwards;
+    opacity: 0;
 }
 
 .icons-home {
@@ -55,6 +61,8 @@
     margin-top: 30px;
     justify-content: space-around;
     align-items: center;
+    animation: aparicion 1s ease .8s 1 normal forwards;
+    opacity: 0;
 }
 
 .icon-home {
@@ -86,6 +94,15 @@
   .h1-home {
     font-size: 36px;
   }
+  .p-home {
+    font-size: var(--md);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .home-content {
+    padding: 0 10px;
+  }
 }
 
 @keyframes gradient {
@@ -97,5 +114,17 @@
 	}
 	100% {
 		background-position: 0% 50%;
+	}
+}
+
+@keyframes aparicion {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
