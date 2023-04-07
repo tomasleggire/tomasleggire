@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/App.scss";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomeContainer from "./containers/HomeContainer";
 import Navbar from "./components/Navbar";
 import Portada from "./components/Portada";
@@ -11,27 +12,23 @@ import MoreInfo from "./components/MoreInfo";
 import Portfolio from "./containers/Portfolio";
 import Contact from "./containers/Contact";
 
-
 function App() {
   const initialState = useInitialState();
 
-  const [containerRef, isVisible] = useElementOnScreen({
-    root: null,
-    rootMargin: "0px",
-    threshold: 1.0,
-  });
-
   return (
     <AppContext.Provider value={initialState}>
-      <div className="App" ref={containerRef}>
-        <HomeContainer>
-          <Navbar isVisible={isVisible} />
-          <Portada />
-        </HomeContainer>
-        
-      </div>
+      <Router>
+        <Navbar />
+        <HomeContainer />
+      </Router>
     </AppContext.Provider>
   );
 }
 
 export default App;
+
+// const [containerRef, isVisible] = useElementOnScreen({
+//   root: null,
+//   rootMargin: "0px",
+//   threshold: 1.0,
+// });

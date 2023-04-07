@@ -1,41 +1,21 @@
 import React from 'react'
 import '../styles/Navbar.scss';
 import { MdAccountBox } from "react-icons/md";
-import { MdOutlineFormatListBulleted } from "react-icons/md";
-import { Link } from "react-scroll";
+import { MdDehaze } from "react-icons/md";
+import { MdEast } from "react-icons/md";
 
-export default function Navbar({ isVisible }) {
+export default function Navbar() {
 
     return (
-        <header className={`nav-main ${!isVisible ? 'visible' : ''}`}>
-            <nav className='nav'>
-                <Link smooth to="home">
-                <div className='name-title'>
-                    <MdAccountBox className='title-icon' />
-                    <h3 className='title-h3'>tomás.me</h3>
-                </div>
-                </Link>
-                <MdOutlineFormatListBulleted className='nav-menu-icon' />
-                <div className='nav-links'>
-                    <ul>
-                        <li>
-                            <Link activeClass='active' smooth spy to="services" className='nav-li' offset={-80}>
-                                SERVICES
-                            </Link>
-                        </li>
-                        <li>
-                            <Link activeClass='active' smooth spy to="portfolio" className='nav-li' offset={-60}>
-                                PORTFOLIO
-                            </Link>
-                        </li>
-                        <li>
-                            <Link activeClass='active' smooth spy to="contact" className='nav-li' offset={-50}>
-                                CONTACT
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+        <>
+            <header className='nav-main'>
+                <nav className='nav'>
+                    <MdAccountBox className='icon-nav' />
+                    <MdDehaze className='icon-nav' />
+                    <h4 className='h4-nav'><span className='span-nav'>© 2023</span> TomásLeggire</h4>
+                </nav>
+            </header>
+            <MdEast className='icon-nav nav-mobile'/>
+        </>
     )
 }
