@@ -15,12 +15,12 @@
 .home-content {
     width: 1000px;
     height: auto;
-    outline: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 0 80px;
 }
 
 .img-me {
@@ -28,7 +28,7 @@
     border-radius: 50%;
     background-color: var(--white);
     padding: 2px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .h1-home {
@@ -40,9 +40,47 @@
     color: var(--high-yellow);
 }
 
+.p-home {
+    color: var(--light-yellow);
+    font-size: var(--lg);
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons-home {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-home {
+    width: 40px;
+    height: 40px;
+    color: var(--light-yellow);
+    background-color: var(--black);
+    border: 1px solid var(--light-yellow);
+    padding: 10px;
+    margin: 0 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.icon-home:hover {
+    color: var(--black);
+    background-color: var(--light-yellow);
+}
+
 @media only screen and (max-width: 1023px) {
   .home-div-main {
     width: 100%;
     margin-left: 0;
+  }
+  .home-content {
+    padding: 0 40px;
+  }
+  .h1-home {
+    font-size: 36px;
   }
 }
