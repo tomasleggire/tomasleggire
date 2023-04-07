@@ -1,0 +1,23 @@
+@import 'vars';
+
+.main-nav-menu {
+    width: calc(100% - 90px);
+    height: 100vh;
+    position: fixed;
+    background-color: var(--black);
+    right: 0;
+    z-index: 10;
+    bottom: -100vh;
+    transition: 1s;
+}
+
+.visible-menu {
+    bottom: 0;
+}
+
+@media only screen and (max-width: 1023px) {
+    .main-nav-menu {
+        display: none;
+    }
+}
+

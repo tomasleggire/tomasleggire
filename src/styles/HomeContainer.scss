@@ -26,10 +26,8 @@
 .img-me {
     width: 160px;
     border-radius: 50%;
-    background: linear-gradient(-45deg, #edd32d, #393939, #e9dea7, #ebd86a);
-	background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
-    padding: 4px;
+    background-color: var(--light-yellow);
+    padding: 3px;
     margin-bottom: 20px;
     animation: aparicion 1s ease 0s 1 normal forwards;
     opacity: 0;
@@ -103,18 +101,6 @@
   .home-content {
     padding: 0 10px;
   }
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 }
 
 @keyframes aparicion {

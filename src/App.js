@@ -2,7 +2,7 @@ import React from "react";
 import "./styles/App.scss";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomeContainer from "./containers/HomeContainer";
-import Navbar from "./components/Navbar";
+import Navbar from "./containers/Navbar";
 import Portada from "./components/Portada";
 import useElementOnScreen from "./hooks/useElementOnScreen";
 import Services from "./containers/Services";
