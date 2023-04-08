@@ -2,6 +2,7 @@ import React, { useRef, useContext } from "react";
 import AppContext from "../context/AppContext";
 import "../styles/Services.scss";
 import Title from "../components/Title";
+import me2 from '../images/YO2.PNG';
 
 import Slider from "react-slick";
 import Option from "../components/Option";
@@ -46,6 +47,37 @@ export default function Services() {
   return (
     <div className="services-main">
       <Title title='ABOUT ME' subTitle='ABOUT'/>
+      <div className="about-me-main">
+        <img src={me2} className="about-img" />
+        <div className="about-info">
+          <h1 className="h1-about">Hi, I am <span className="span-about">Tomás Leggire</span></h1>
+          <ul className="ul-about">
+            <li>
+              First Name: Tomás
+            </li>
+            <li>
+              Last Name: Leggire
+            </li>
+            <li>
+              Age: 23
+            </li>
+            <li>
+              Nacionality: Argentinian
+            </li>
+            <li>
+              Lenguages: Spanish, English
+            </li>
+            <li>
+              Address: Merlo, Buenos Aires, Argentina
+            </li>
+            <li>
+              Freelance: Avaliable
+            </li>
+          </ul>
+        <button type="button" className="btn-about">DOWNLOAD CURRICULUM</button>
+        </div>
+      </div>
+      <Title title='MY SERVICES' subTitle='SERVICES' />
     </div>
   );
 }
