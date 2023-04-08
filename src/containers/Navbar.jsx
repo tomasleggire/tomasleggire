@@ -7,16 +7,20 @@ import { MdClear } from "react-icons/md";
 import { Link } from 'react-router-dom';
 
 import NavMenu from './NavMenu';
+import NavMenuMobile from './NavMenuMobile';
 
 export default function Navbar() {
 
     const [menuValue, setMenuValue] = useState(false);
+    const [menuMobileValue, setMenuMobileValue] = useState(false);
 
     const openModal = () => {
         setMenuValue(true);
+        setMenuMobileValue(true);
     }
     const closeModal = () => {
         setMenuValue(false);
+        setMenuMobileValue(false);
     }
 
     return (
@@ -29,7 +33,8 @@ export default function Navbar() {
                 </nav>
             </header>
             <NavMenu menuValue={menuValue} setMenuValue={setMenuValue}/>
-            <MdEast className='icon-nav nav-mobile'/>
+            <NavMenuMobile menuMobileValue={menuMobileValue} setMenuMobileValue={setMenuMobileValue} />
+            <MdEast className='icon-nav nav-mobile' onClick={openModal}/>
         </>
     )
 }
