@@ -16,10 +16,14 @@ export default function Navbar() {
 
     const openModal = () => {
         setMenuValue(true);
-        setMenuMobileValue(true);
     }
     const closeModal = () => {
         setMenuValue(false);
+    }
+    const openModalMobile = () => {
+        setMenuMobileValue(true);
+    }
+    const closeModalMobile = () => {
         setMenuMobileValue(false);
     }
 
@@ -34,7 +38,7 @@ export default function Navbar() {
             </header>
             <NavMenu menuValue={menuValue} setMenuValue={setMenuValue}/>
             <NavMenuMobile menuMobileValue={menuMobileValue} setMenuMobileValue={setMenuMobileValue} />
-            <MdEast className='icon-nav nav-mobile' onClick={openModal}/>
+            <MdEast className='icon-nav nav-mobile' onClick={openModalMobile}/>
         </>
     )
 }
