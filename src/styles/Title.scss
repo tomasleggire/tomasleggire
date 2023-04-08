@@ -1,0 +1,66 @@
+@import 'vars';
+
+.title-main {
+    text-align: center;
+    padding-top: -30px;
+}
+
+.title-back {
+    position: relative;
+    top: 130px;
+    color: var(--light-yellow);
+    opacity: .1;
+    z-index: 5;
+    font-size: 120px;
+}
+
+.title-front {
+    z-index: 10;
+    color: var(--white);
+    font-size: 38px;
+}
+
+.sun {
+    background-color: var(--high-yellow);
+    border-radius: 50%;
+    height: 10px;
+    aspect-ratio: 1 / 1;
+    margin: auto;
+    animation: 2s linear 0s infinite
+        alternate bounce;
+  }
+  
+  @keyframes bounce {
+    from {
+      transform: translateX(-70px);
+    }
+    to {
+      transform: translateX(70px);
+    }
+  }
+
+  @media only screen and (max-width: 940px) {
+    .title-back {
+        top: 100px;
+        color: var(--light-yellow);
+        font-size: 90px;
+    }
+    
+    .title-front {
+        font-size: 30px;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .title-back {
+        top: 85px;
+        color: var(--light-yellow);
+        font-size: 80px;
+    }
+    
+    .title-front {
+        font-size: 30px;
+    }
+    
+  }
