@@ -2,21 +2,23 @@
 
 .title-main {
     text-align: center;
+    overflow: hidden;
+    padding-top: 80px;
 }
 
 .title-back {
-    position: relative;
-    top: 100px;
     color: var(--light-yellow);
     opacity: .1;
     z-index: 5;
     font-size: 120px;
+    margin-bottom: -110px;
 }
 
 .title-front {
     z-index: 10;
     color: var(--white);
     font-size: 38px;
+    padding: 10px 0;
 }
 
 .sun {
@@ -40,26 +42,29 @@
 
   @media only screen and (max-width: 940px) {
     .title-back {
-        top: 75px;
+        margin-bottom: -85px;
         color: var(--light-yellow);
         font-size: 90px;
     }
     
     .title-front {
         font-size: 30px;
+        padding: 10px 0;
     }
     
   }
   
   @media only screen and (max-width: 500px) {
     .title-back {
-        top: 70px;
+        margin-bottom: -80px;
         color: var(--light-yellow);
         font-size: 80px;
+        
     }
     
     .title-front {
         font-size: 30px;
+        padding: 10px 0;
     }
     
   }
