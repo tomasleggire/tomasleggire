@@ -7,7 +7,6 @@ import useElementOnScreen from "./hooks/useElementOnScreen";
 import Services from "./containers/Services";
 import AppContext from "./context/AppContext";
 import useInitialState from "./hooks/useInitialState";
-import MoreInfo from "./components/MoreInfo";
 import Portfolio from "./containers/Portfolio";
 import Contact from "./containers/Contact";
 
