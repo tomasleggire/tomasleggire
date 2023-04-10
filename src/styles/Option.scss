@@ -3,15 +3,16 @@
 .option-main {
     height: 300px;
     display: flex;
-    padding: 0px 21px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
+    padding: 0 30px;
+    text-align: center;
+    cursor: grab;
 }
 
 .option-imagen {
-    height: 100px;
+    height: 90px;
     margin-bottom: 10px;
 }
 
@@ -19,22 +20,35 @@
     font-size: var(--lg);
     margin-bottom: 18px;
     font-weight: 500;
-    color: var(--blue-secondary);
+    color: var(--white);
 }
 
 .option-text {
     text-align: center;
-    color: var(--blue-tres);
+    color: lightgray;
     font-size: var(--lg);
-    padding: 0 25px;
     font-weight: 400;
 }
 
 @media only screen and (max-width: 1024px) {
     .option-main {
-        padding: 0;
+        padding: 0 15px;
     }
-    .option-text {  
-        padding: 0 10px;
+}
+
+@media only screen and (max-width: 750px) {
+    .option-main {
+        padding: 0px;
+    }
+    .option-imagen {
+        height: 80px;
+    }
+    
+    .option-title {
+        font-size: var(--md);
+    }
+    
+    .option-text {
+        font-size: var(--md);
     }
 }

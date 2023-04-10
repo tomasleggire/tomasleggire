@@ -1,15 +1,10 @@
 import { useState } from "react";
-// import imageOne from "../icons/cell-phone-svgrepo-com.svg";
-// import imageTwo from "../icons/book-svgrepo-com.svg";
-// import imageThree from "../icons/official-document-svgrepo-com.svg";
-// import imageFour from "../icons/pencil-svgrepo-com.svg";
-// import imageFive from "../icons/ppt-icon-application-svgrepo-com.svg";
-// import imageSix from "../icons/tick-svgrepo-com.svg";
-
-import html from '../images/imagesTechItems/html5.svg';
-import js from '../images/imagesTechItems/javascript.svg';
-import scss from '../images/imagesTechItems/sass.svg';
-import css from '../images/imagesTechItems/css3.svg';
+import imageOne from "../icons/slider-icons/cell-phone-svgrepo-com.svg";
+import imageTwo from "../icons/slider-icons/book-svgrepo-com.svg";
+import imageThree from "../icons/slider-icons/official-document-svgrepo-com.svg";
+import imageFour from "../icons/slider-icons/pencil-svgrepo-com.svg";
+import imageFive from "../icons/slider-icons/ppt-icon-application-svgrepo-com.svg";
+import imageSix from "../icons/slider-icons/tick-svgrepo-com.svg";
 
 import imagenUno from "../images/imagesPortfolio/itemPort1.png";
 import imagenDos from "../images/imagesPortfolio/itemPort2.png";
@@ -22,64 +17,36 @@ import imagenModalTres from "../images/imagesModalPortfolio/item3.PNG";
 import imagenModalCuatro from "../images/imagesModalPortfolio/item4.PNG";
 
 const useInitialState = () => {
-  // const optionsState = [
-  //   {
-  //     image: imageOne,
-  //     text: "A responsive design makes your website accessible to all users, regardless of their device",
-  //     title: "MOBILE-FRIENDLY",
-  //   },
-  //   {
-  //     image: imageTwo,
-  //     text: "Proficiency in the core web technologies of HTML, CSS, and JavaScript",
-  //     title: "PROFICIENCY",
-  //   },
-  //   {
-  //     image: imageThree,
-  //     text: "Experience with React and ability to use it to build complex web applications",
-  //     title: "FRONT-END FRAMEWORKS",
-  //   },
-  //   {
-  //     image: imageFour,
-  //     text: "Web accessibility and ability to design and develop websites for everyone",
-  //     title: "WEB ACCESSIBILITY",
-  //   },
-  //   {
-  //     image: imageFive,
-  //     text: "Experience with version control systems like Git for managing and collaborating on projects",
-  //     title: "VERSION CONTROL",
-  //   },
-  //   {
-  //     image: imageSix,
-  //     text: "Ability to write unit tests for code and use testing frameworks to ensure code quality",
-  //     title: "TESTING",
-  //   },
-  // ];
-
-  const itemsTech = [
+  const optionsState = [
     {
-      text: "HTML",
-      img: html,
+      image: imageOne,
+      text: "A responsive design makes your website accessible to all users, regardless of their device",
+      title: "MOBILE-FRIENDLY",
     },
     {
-      text: "CSS",
-      img: css,
+      image: imageTwo,
+      text: "Proficiency in the core web technologies of HTML, CSS, and JavaScript",
+      title: "PROFICIENCY",
     },
     {
-      text: "SASS",
-      img: scss,
-    },
-
-    {
-      text: "JAVASCRIPT",
-      img: js,
+      image: imageThree,
+      text: "Experience with React and ability to use it to build complex web applications",
+      title: "FRONT-END FRAMEWORKS",
     },
     {
-      text: "REACT JS",
-      img: html,
+      image: imageFour,
+      text: "Web accessibility and ability to design and develop websites for everyone",
+      title: "WEB ACCESSIBILITY",
     },
     {
-      text: "REACT NAVITE",
-      img: html,
+      image: imageFive,
+      text: "Experience with version control systems like Git for managing and collaborating on projects",
+      title: "VERSION CONTROL",
+    },
+    {
+      image: imageSix,
+      text: "Ability to write unit tests for code and use testing frameworks to ensure code quality",
+      title: "TESTING",
     },
   ];
 
@@ -259,8 +226,7 @@ const useInitialState = () => {
   };
 
   return {
-    // optionsState,
-    itemsTech,
+    optionsState,
     portfolioItems,
     mainItemModalPort,
     setMainItemModalPort,
