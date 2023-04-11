@@ -21,7 +21,7 @@ export default function Services() {
 
   const [containerRef, isVisible] = useElementOnScreen({
   root: null,
-  rootMargin: "0px",
+  rootMargin: "150px",
   threshold: .1,
 });
     
@@ -34,13 +34,13 @@ export default function Services() {
     },
     {
       num: 2,
-      img: FaDatabase,
+      img: FaTabletAlt,
       title: 'Mobile App Development',
       subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue diam etiam venenatis mi tristique amet cras diam etiam.'
     },
     {
       num: 3,
-      img: FaTabletAlt,
+      img: FaDatabase,
       title: 'Backend Development',
       subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue diam etiam venenatis mi tristique amet cras diam etiam.'
     },

@@ -1,10 +1,10 @@
 import { useState } from "react";
-import imageOne from "../icons/slider-icons/cell-phone-svgrepo-com.svg";
-import imageTwo from "../icons/slider-icons/book-svgrepo-com.svg";
-import imageThree from "../icons/slider-icons/official-document-svgrepo-com.svg";
-import imageFour from "../icons/slider-icons/pencil-svgrepo-com.svg";
-import imageFive from "../icons/slider-icons/ppt-icon-application-svgrepo-com.svg";
-import imageSix from "../icons/slider-icons/tick-svgrepo-com.svg";
+import imageOne from '../icons/slider-icons/computadora.png';
+import imageTwo from '../icons/slider-icons/engranaje.png';
+import imageThree from '../icons/slider-icons/engranaje-framework.png';
+import imageFour from '../icons/slider-icons/internet.png';
+import imageFive from '../icons/slider-icons/presentacion.png';
+import imageSix from '../icons/slider-icons/frasco.png';
 
 import imagenUno from "../images/imagesPortfolio/itemPort1.png";
 import imagenDos from "../images/imagesPortfolio/itemPort2.png";

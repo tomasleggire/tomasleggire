@@ -3,7 +3,6 @@ import "./styles/App.scss";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomeContainer from "./containers/HomeContainer";
 import Navbar from "./containers/Navbar";
-import useElementOnScreen from "./hooks/useElementOnScreen";
 import Services from "./containers/Services";
 import AppContext from "./context/AppContext";
 import useInitialState from "./hooks/useInitialState";
