@@ -1,7 +1,7 @@
 @import 'vars';
 
 .option-main {
-    height: 300px;
+    height: 280px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,23 +9,37 @@
     padding: 0 30px;
     text-align: center;
     cursor: grab;
+    margin: 0 20px;
+}
+
+.option-image-div {
+    background-color: var(--light-yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px -4px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 16px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 16px -4px rgba(0,0,0,0.75);
+border: 1px solid #5a5356;
 }
 
 .option-imagen {
-    height: 90px;
-    margin-bottom: 10px;
+    height: 70px;
 }
 
 .option-title {
     font-size: var(--lg);
-    margin-bottom: 18px;
+    margin-bottom: 10px;
     font-weight: 500;
     color: var(--white);
 }
 
 .option-text {
     text-align: center;
-    color: lightgray;
+    color: var(--light-yellow);
     font-size: var(--lg);
     font-weight: 400;
 }
@@ -38,17 +52,17 @@
 
 @media only screen and (max-width: 750px) {
     .option-main {
-        padding: 0px;
+        padding: 0 20px;
     }
     .option-imagen {
-        height: 80px;
+        height: 60px;
     }
     
     .option-title {
-        font-size: var(--md);
+        font-size: var(--sm);
     }
     
     .option-text {
-        font-size: var(--md);
+        font-size: var(--sm);
     }
 }
