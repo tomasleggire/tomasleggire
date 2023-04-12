@@ -17,10 +17,6 @@
   border-radius: 5px;
 }
 
-.circle-main-div:hover {
-  transform: translateY(-5px);
-}
-
 .circle-progress {
   width: 125px;
   height: 125px;
@@ -33,6 +29,19 @@
   text-align: center;
   font-size: 18px;
   color: var(--white);
+}
+
+.circle-1 {
+  animation: aparicion 1s ease .2s 1 normal forwards;
+    opacity: 0;
+}
+.circle-2 {
+  animation: aparicion 1s ease .5s 1 normal forwards;
+    opacity: 0;
+}
+.circle-3 {
+  animation: aparicion 1s ease .8s 1 normal forwards;
+    opacity: 0;
 }
 
 @media only screen and (max-width: 1122px) {
@@ -55,4 +64,16 @@
   .h1-progress-circle {
     font-size: 14px;
   }
+}
+
+@keyframes aparicion {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

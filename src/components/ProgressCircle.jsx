@@ -6,9 +6,9 @@ import AnimatedProgressProvider from '../hooks/AnimatedProgressProvider';
 import { easeQuadInOut } from "d3-ease";
 
 
-export default function ProgressCircle({ porcentaje, name }) {
+export default function ProgressCircle({ porcentaje, name, classNameCircle }) {
     return (
-        <div className="circle-main-div">
+        <div className={`circle-main-div ${classNameCircle}`}>
             <div className="circle-progress">
                 <AnimatedProgressProvider
                     valueStart={0}
