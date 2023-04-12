@@ -9,9 +9,40 @@ background-size: 77px 77px;
 background-color: #393939;
 }
 
+.main-circles {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1150px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+
+
 @media only screen and (max-width: 1023px) {
     .resume-main-div {
         width: 100%;
         margin-left: 0;
     }
+}   
+
+@media only screen and (max-width: 1122px) {
+    .main-circles {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+}   
+
+@keyframes aparicion {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

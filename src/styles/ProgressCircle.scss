@@ -1,6 +1,58 @@
 @import "vars";
 
+.circle-main-div {
+  width: 320px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  box-shadow: 0px 0px 16px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 16px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 16px -4px rgba(0, 0, 0, 0.75);
+  transition: 0.2s;
+  border: 1px solid #5a5356;
+  padding: 22px 0;
+  border-radius: 5px;
+}
+
+.circle-main-div:hover {
+  transform: translateY(-5px);
+}
+
 .circle-progress {
-    width: 100px;
-    height: 100px;
+  width: 125px;
+  height: 125px;
+  font-weight: 500;
+  font-family: monospace;
+  margin-bottom: 15px;
+}
+
+.h1-progress-circle {
+  text-align: center;
+  font-size: 18px;
+  color: var(--white);
+}
+
+@media only screen and (max-width: 1122px) {
+  .circle-main-div {
+    width: 620px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .circle-main-div {
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .circle-main-div {
+    width: 220px;
+  }
+  .h1-progress-circle {
+    font-size: 14px;
+  }
 }
