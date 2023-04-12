@@ -107,7 +107,7 @@ export default function Services() {
               Freelance: Avaliable
             </li>
           </ul>
-        <button type="button" className="btn-about">DOWNLOAD RESUME</button>
+        <button type="button" className="btn-about">DOWNLOAD CV</button>
         </div>
       </div>
       <Title title='MY SERVICES' subTitle='SERVICES' />

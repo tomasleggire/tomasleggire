@@ -6,6 +6,7 @@ import Navbar from "./containers/Navbar";
 import Services from "./containers/Services";
 import AppContext from "./context/AppContext";
 import useInitialState from "./hooks/useInitialState";
+import Resume from "./containers/Resume";
 import Portfolio from "./containers/Portfolio";
 import Contact from "./containers/Contact";
 
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeContainer />} />
           <Route path="/about" element={<Services />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </Router>
     </AppContext.Provider>
