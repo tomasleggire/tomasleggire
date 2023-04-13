@@ -4,9 +4,9 @@
     width: calc(100% - 90px);
     margin-left: 90px;
     min-height: 100vh;
-    background-image: linear-gradient(#42413e 1px, transparent 1px), linear-gradient(to right, #42413e 1px, transparent 1px);
-background-size: 77px 77px;
-background-color: #393939;
+    background-image: linear-gradient(rgba(115, 115, 115, 0.06) 1px, transparent 1px), linear-gradient(to right, rgba(115, 115, 115, 0.06) 1px, transparent 1px);
+background-size: 31px 31px;
+background-color: #212121;
 }
 
 .about-me-main {
@@ -39,7 +39,7 @@ background-color: #393939;
 }
 
 .span-about {
-    color: var(--high-yellow);
+    color: var(--high-blue);
 }
 
 .ul-about {
@@ -56,7 +56,7 @@ background-color: #393939;
 
 .ul-about li::before {
     content: "\2022";
-    color: var(--high-yellow);
+    color: var(--high-blue);
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -69,7 +69,7 @@ background-color: #393939;
     background: none;
     margin-top: 30px;
     color: var(--black);
-    background-color: var(--high-yellow);
+    background-color: var(--high-blue);
     padding: 12px 22px;
     border-radius: 5px;
     font-weight: 600;
@@ -99,7 +99,7 @@ background-color: #393939;
 }
 
 .services-icon-div {
-    background-color: var(--light-yellow);
+    background-color: var(--medium-blue);
     padding: 20px;
     border-radius: 50%;
     margin: 20px;
@@ -112,7 +112,7 @@ background-color: #393939;
 .services-icon {
     width: 40px;
     height: 40px;
-    color: var(--black);
+    color: var(--high-blue);
 }
 
 @media only screen and (max-width: 1023px) {
@@ -196,7 +196,7 @@ background-color: #393939;
     border: none;
     background: none;
     cursor: pointer;
-    border: 1px solid var(--light-yellow);
+    border: 1px solid var(--high-blue);
     border-radius: 50%;
     opacity: .3;
     transition: .3s;
@@ -214,7 +214,7 @@ background-color: #393939;
 .btn-option {
     width: 45px;
     height: 45px;
-    color: var(--light-yellow);
+    color: var(--high-blue);
 }
 
 @media only screen and (max-width: 750px) {

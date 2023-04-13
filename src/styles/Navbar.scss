@@ -6,8 +6,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: #393939;
-    border-right: 1px solid rgb(116, 113, 113);
+    background: var(--black);
+    border-right: 1px solid gray;
 }
 
 .nav {
@@ -40,7 +40,7 @@
 }
 
 .span-nav {
-    color: var(--light-yellow);
+    color: var(--high-blue);
 }
 
 .nav-mobile {
@@ -51,7 +51,7 @@
     left: 0;
     top: 50vh;
     color: var(--black);
-    background-color:#e9dea7ad;
+    background-color:#0d7477a1;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     z-index: 100;

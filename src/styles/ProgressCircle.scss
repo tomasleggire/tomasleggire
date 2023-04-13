@@ -7,12 +7,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--black);
+  background-color: var(--light-black);
   box-shadow: 0px 0px 16px -4px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 16px -4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 16px -4px rgba(0, 0, 0, 0.75);
   transition: 0.2s;
-  border: 1px solid #5a5356;
+  border: 1px solid rgba(128, 128, 128, 0.603);
   padding: 22px 0;
   border-radius: 5px;
 }

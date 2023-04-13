@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    border-right: 1px solid rgb(116, 113, 113);
+    border-right: 1px solid rgb(80, 80, 80);
 }
 
 .text-nav-menu {
@@ -24,13 +24,13 @@
 }
 
 .nav-menu-span {
-    color: var(--high-yellow);
+    color: var(--high-blue);
     
 }
 
 .link-nav-menu:hover {
     padding: 0 55px;
-    color: var(--high-yellow) !important;
+    color: var(--high-blue) !important;
 }
 
 .link-nav-menu:visited {

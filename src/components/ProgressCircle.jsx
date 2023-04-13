@@ -25,9 +25,9 @@ export default function ProgressCircle({ porcentaje, name, classNameCircle }) {
                                 text={`${roundedValue}%`}
                                 styles={buildStyles({
                                      pathTransition: "none",
-                                     textColor: 'lightgray',
-                                     pathColor: '#edd32d',
-                                     trailColor: '#b6b094',
+                                     textColor: '#F0F0F0',
+                                     pathColor: '#14FFEC',
+                                     trailColor: '#0D7377',
                                      textSize: '20px',
                                 })}
                             />

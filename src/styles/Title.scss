@@ -7,7 +7,7 @@
 }
 
 .title-back {
-    color: var(--light-yellow);
+    color: var(--high-blue);
     opacity: .1;
     z-index: 5;
     font-size: 120px;
@@ -22,7 +22,7 @@
 }
 
 .sun {
-    background-color: var(--high-yellow);
+    background-color: var(--high-blue); 
     border-radius: 50%;
     height: 10px;
     aspect-ratio: 1 / 1;
@@ -43,7 +43,6 @@
   @media only screen and (max-width: 940px) {
     .title-back {
         margin-bottom: -85px;
-        color: var(--light-yellow);
         font-size: 90px;
     }
     
@@ -57,7 +56,6 @@
   @media only screen and (max-width: 500px) {
     .title-back {
         margin-bottom: -80px;
-        color: var(--light-yellow);
         font-size: 80px;
         
     }
