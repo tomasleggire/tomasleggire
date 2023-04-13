@@ -76,27 +76,33 @@ export default function Resume() {
           {skills.map((skill) => {
             return (
               <div className="main-progress-bar" id={skill.id}>
-                <h1 className="h1-progress-bar">{skill.text}</h1>
+                <h1 className="h1-progress-bar">{skill.text} - <span>({skill.now}%)</span></h1>
                 <ProgressBar
                   className="progress-bar"
                   completed={skill.now}
                   isLabelVisible={false}
                   animateOnRender={true}
+                  baseBgColor={'#0D7377'}
+                  bgColor={'#14FFEC'}
+                  height="16px"
                 />
               </div>
             );
           })}
         </div>
         <div>
-          {otherSkills.map((otjerSkill) => {
+          {otherSkills.map((otherSkill) => {
             return (
-              <div className="main-progress-bar" id={otjerSkill.id}>
-                <h1 className="h1-progress-bar">{otjerSkill.text}</h1>
+              <div className="main-progress-bar" id={otherSkill.id}>
+                <h1 className="h1-progress-bar">{otherSkill.text} - <span>({otherSkill.now}%)</span></h1>
                 <ProgressBar
                   className="progress-bar"
-                  completed={otjerSkill.now}
+                  completed={otherSkill.now}
                   isLabelVisible={false}
                   animateOnRender={true}
+                  baseBgColor={'#0D7377'}
+                  bgColor={'#14FFEC'}
+                  height="16px"
                 />
               </div>
             );
