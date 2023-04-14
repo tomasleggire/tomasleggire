@@ -3,6 +3,7 @@ import "../styles/Resume.scss";
 import Title from "../components/Title";
 import ProgressCircle from "../components/ProgressCircle";
 import ProgressBar from "@ramonak/react-progress-bar";
+import Timeline from "./Timeline";
 
 export default function Resume() {
   const skills = [
@@ -72,13 +73,13 @@ export default function Resume() {
         />
       </div>
       <div className="main-progress-container">
-        <div>
+        <div className="skills">
           {skills.map((skill) => {
             return (
               <div className="main-progress-bar" id={skill.id}>
                 <h1 className="h1-progress-bar">{skill.text} - <span>({skill.now}%)</span></h1>
                 <ProgressBar
-                  className="progress-bar"
+                  className={"progress-bar"}
                   completed={skill.now}
                   isLabelVisible={false}
                   animateOnRender={true}
@@ -90,7 +91,7 @@ export default function Resume() {
             );
           })}
         </div>
-        <div>
+        <div className="otherSkills">
           {otherSkills.map((otherSkill) => {
             return (
               <div className="main-progress-bar" id={otherSkill.id}>
@@ -108,6 +109,10 @@ export default function Resume() {
             );
           })}
         </div>
+      </div>
+      <div className="main-timelines">
+        <Timeline layaout='1-column-left'/>
+        <Timeline layaout='1-column-right'/>
       </div>
     </div>
   );

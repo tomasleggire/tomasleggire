@@ -45,6 +45,13 @@ background-color: #212121;
     width: min(600px, 800px);
 }
 
+.main-timelines {
+    display: flex;
+    gap: 60px;
+    padding: 0 60px;
+    margin-top: 80px;
+}
+
 @media only screen and (max-width: 1360px) {
     .main-progress-container {
         gap: 20px;
@@ -112,4 +119,49 @@ background-color: #212121;
     .progress-bar {
         width: min(250px, 800px);
     }
+}
+
+.skills .main-progress-bar:nth-child(1) {
+    animation: aparicion 1s ease 0s 1 normal forwards;
+    opacity: 0;
+}
+.skills .main-progress-bar:nth-child(2) {
+    animation: aparicion 1s ease .4s 1 normal forwards;
+    opacity: 0;
+}
+.skills .main-progress-bar:nth-child(3) {
+    animation: aparicion 1s ease .8s 1 normal forwards;
+    opacity: 0;
+}
+.skills .main-progress-bar:nth-child(4) {
+    animation: aparicion 1s ease 1.2s 1 normal forwards;
+    opacity: 0;
+}
+.otherSkills .main-progress-bar:nth-child(1) {
+    animation: aparicion 1s ease .2s 1 normal forwards;
+    opacity: 0;
+}
+.otherSkills .main-progress-bar:nth-child(2) {
+    animation: aparicion 1s ease .6s 1 normal forwards;
+    opacity: 0;
+}
+.otherSkills .main-progress-bar:nth-child(3) {
+    animation: aparicion 1s ease 1s 1 normal forwards;
+    opacity: 0;
+}
+.otherSkills .main-progress-bar:nth-child(4) {
+    animation: aparicion 1s ease 1.4s 1 normal forwards;
+    opacity: 0;
+}
+
+@keyframes aparicion {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
