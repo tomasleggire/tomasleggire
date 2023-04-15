@@ -9,16 +9,16 @@ import "react-vertical-timeline-component/style.min.css";
 function LineExample({ date, title, subtitle, parrafe, position }) {
   return (
     <VerticalTimelineElement
-        className="vertical-timeline-element--work pito"
-        contentStyle={{ background: "gray", color: "#fff" }}
-        contentArrowStyle={{ borderRight: "7px solid  gray" }}
+        className="vertical-timeline-element--work"
+        contentStyle={{ background: "#2b2b2b", color: "#fff" }}
+        contentArrowStyle={{ borderRight: "7px solid #2b2b2b" }}
         date={date}
         iconStyle={{ display: "none" }}
         position={position}
       >
         <h3 className="vertical-timeline-element-title h3-timeline">{title}</h3>
         <h4 className="vertical-timeline-element-subtitle h4-timeline">{subtitle}</h4>
-        <p>{parrafe}</p>
+        <p className="p-timeline">{parrafe}</p>
       </VerticalTimelineElement>
   )
 }
