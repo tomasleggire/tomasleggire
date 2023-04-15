@@ -5,7 +5,7 @@ import Title from "../components/Title";
 import ServiceItem from "../components/ServiceItem";
 import useElementOnScreen from "../hooks/useElementOnScreen";
 
-import me2 from '../images/YO2.PNG';
+import me2 from "../images/YO2.PNG";
 
 import { FaCode } from "react-icons/fa";
 import { FaDatabase } from "react-icons/fa";
@@ -20,31 +20,34 @@ export default function Services() {
   const { optionsState } = useContext(AppContext);
 
   const [containerRef, isVisible] = useElementOnScreen({
-  root: null,
-  rootMargin: "150px",
-  threshold: .1,
-});
-    
+    root: null,
+    rootMargin: "150px",
+    threshold: 0.1,
+  });
+
   const servicesItems = [
     {
       num: 1,
       img: FaCode,
-      title: 'Web Development',
-      subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue diam etiam venenatis mi tristique amet cras diam etiam.'
+      title: "Web Development",
+      subTitle:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue diam etiam venenatis mi tristique amet cras diam etiam.",
     },
     {
       num: 2,
       img: FaTabletAlt,
-      title: 'Mobile App Development',
-      subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue diam etiam venenatis mi tristique amet cras diam etiam.'
+      title: "Mobile App Development",
+      subTitle:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue diam etiam venenatis mi tristique amet cras diam etiam.",
     },
     {
       num: 3,
       img: FaDatabase,
-      title: 'Backend Development',
-      subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue diam etiam venenatis mi tristique amet cras diam etiam.'
+      title: "Backend Development",
+      subTitle:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue diam etiam venenatis mi tristique amet cras diam etiam.",
     },
-  ]
+  ];
 
   const slider = useRef(null);
 
@@ -79,45 +82,44 @@ export default function Services() {
 
   return (
     <div className="services-main">
-      <Title title='ABOUT ME' subTitle='ABOUT'/>
+      <Title title="ABOUT ME" subTitle="ABOUT" />
       <div className="about-me-main">
         <img src={me2} className="about-img" />
         <div className="about-info">
-          <h1 className="h1-about">Hi, I am <span className="span-about">Tomás Leggire</span></h1>
+          <h1 className="h1-about">
+            Hi, I am <span className="span-about">Tomás Leggire</span>
+          </h1>
           <ul className="ul-about">
-            <li>
-              First Name: Tomás
-            </li>
-            <li>
-              Last Name: Leggire
-            </li>
-            <li>
-              Age: 23
-            </li>
-            <li>
-              Nacionality: Argentinian
-            </li>
-            <li>
-              Lenguages: Spanish, English
-            </li>
-            <li>
-              Address: Merlo, Buenos Aires, Argentina
-            </li>
-            <li>
-              Freelance: Avaliable
-            </li>
+            <li>First Name: Tomás</li>
+            <li>Last Name: Leggire</li>
+            <li>Age: 23</li>
+            <li>Nacionality: Argentinian</li>
+            <li>Lenguages: Spanish, English</li>
+            <li>Address: Merlo, Buenos Aires, Argentina</li>
+            <li>Freelance: Avaliable</li>
           </ul>
-        <button type="button" className="btn-about">DOWNLOAD CV</button>
+          <button type="button" className="btn-about">
+            DOWNLOAD CV
+          </button>
         </div>
       </div>
-      <Title title='MY SERVICES' subTitle='SERVICES' />
-      <div className={`services-items ${isVisible && 'services-visible'}`} ref={containerRef}>
+      <Title title="MY SERVICES" subTitle="SERVICES" />
+      <div
+        className={`services-items ${isVisible && "services-visible"}`}
+        ref={containerRef}
+      >
         {servicesItems.map((serviceItem) => {
           return (
-            <ServiceItem num={serviceItem.num} title={serviceItem.title} subTitle={serviceItem.subTitle}>
-              <div className="services-icon-div"><serviceItem.img className="services-icon"/></div>
+            <ServiceItem
+              num={serviceItem.num}
+              title={serviceItem.title}
+              subTitle={serviceItem.subTitle}
+            >
+              <div className="services-icon-div">
+                <serviceItem.img className="services-icon" />
+              </div>
             </ServiceItem>
-          )
+          );
         })}
       </div>
 
@@ -131,7 +133,12 @@ export default function Services() {
         <Slider {...settings} className="services-slider" ref={slider}>
           {optionsState.map((item) => {
             return (
-              <Option image={item.image} text={item.text} title={item.title} key={item.title}/>
+              <Option
+                image={item.image}
+                text={item.text}
+                title={item.title}
+                key={item.title}
+              />
             );
           })}
         </Slider>
@@ -142,7 +149,6 @@ export default function Services() {
           <MdKeyboardArrowRight className="btn-option" />
         </button>
       </div>
-
     </div>
   );
 }
