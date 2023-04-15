@@ -3,7 +3,7 @@ import "../styles/Resume.scss";
 import Title from "../components/Title";
 import ProgressCircle from "../components/ProgressCircle";
 import ProgressBar from "@ramonak/react-progress-bar";
-import Timeline from "./Timeline";
+import TimeLineExample from "./TimeLineExample";
 
 export default function Resume() {
   const skills = [
@@ -111,8 +111,7 @@ export default function Resume() {
         </div>
       </div>
       <div className="main-timelines">
-        <Timeline layaout='1-column-left'/>
-        <Timeline layaout='1-column-right'/>
+        <TimeLineExample />
       </div>
     </div>
   );
