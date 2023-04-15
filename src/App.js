@@ -21,6 +21,7 @@ function App() {
           <Route path="/" element={<HomeContainer />} />
           <Route path="/about" element={<Services />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/works" element={<Portfolio />} />
         </Routes>
       </Router>
     </AppContext.Provider>

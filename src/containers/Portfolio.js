@@ -1,9 +1,9 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import "../styles/Portfolio.scss";
 import PortfolioItem from "../components/PortfolioItem";
 import AppContext from "../context/AppContext";
-import useElementOnScreen from "../hooks/useElementOnScreen";
 import ModalItemPort from "./ModalItemPort";
+import Title from "../components/Title";
 
 export default function Portfolio() {
   const { portfolioItems, mainItemModalPort, changeMainModalItem } =
@@ -11,19 +11,22 @@ export default function Portfolio() {
 
   const [modalItemValue, setModalItemValue] = useState(false);
 
-  const [containerRef, isVisible] = useElementOnScreen({
-    root: null,
-    rootMargin: "0px",
-    threshold: 0,
-  });
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 500)
+  }, [])
 
   return (
-    <div className="portfolio-main" name="portfolio" ref={containerRef}>
-      <div
-        className={`container-portfolio ${
-          isVisible ? "container-visible" : ""
-        }`}
-      >
+    <div className="portfolio-main">
+      <Title title="MY WORKS" subTitle="WORKS" />
+      {loading ? 
+        <p>Cargando...</p> : 
+        <>
+      <div className="container-portfolio">
         <div className="cards">
           {portfolioItems.map((item) => {
             return (
@@ -45,6 +48,8 @@ export default function Portfolio() {
           mainItemModalPort={mainItemModalPort}
         />
       )}
+      </>
+      }
     </div>
   );
 }

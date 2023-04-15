@@ -7,7 +7,7 @@
   align-items: center;
   // height: 350px;
   height: auto;
-  margin: 20px;
+  margin: 10px;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -26,11 +26,9 @@
 
 .item-h1 {
   margin-top: 20px;
-  color: var(--special-white);
-  background: -moz-linear-gradient(329deg, rgba(74,180,223,1) 14%, rgb(53, 127, 224) 90%);
-background: -webkit-linear-gradient(329deg, rgba(74,180,223,1) 14%, rgb(53, 127, 224) 90%);
-background: linear-gradient(329deg, rgba(74,180,223,1) 14%, rgb(53, 127, 224) 90%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ab4df",endColorstr="#ecf9f5",GradientType=1);
+  color: var(--white);
+  background-color: var(--black);
+  border: 1px solid var(--white);
   margin-bottom: 8px;
   padding: 5px 10px;
   border-radius: 10px;

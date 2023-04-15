@@ -1,22 +1,12 @@
 @import "vars";
 
 .portfolio-main {
-    width: 100%;
-    height: auto;
-    display: flex;
-    margin-top: 30px;
-    flex-direction: column;
-    align-items: center;
-//     background: -moz-linear-gradient(329deg, rgba(74,180,223,1) 14%, rgb(53, 127, 224) 90%);
-// background: -webkit-linear-gradient(329deg, rgba(74,180,223,1) 14%, rgb(53, 127, 224) 90%);
-// background: linear-gradient(329deg, rgba(74,180,223,1) 14%, rgb(53, 127, 224) 90%);
-// filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ab4df",endColorstr="#ecf9f5",GradientType=1);
-// color: var(--special-white);
-    border-top: 1px solid lightgray;
-    padding-top: 20px;
-    
-
-
+  width: calc(100% - 90px);
+  margin-left: 90px;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(115, 115, 115, 0.06) 1px, transparent 1px), linear-gradient(to right, rgba(115, 115, 115, 0.06) 1px, transparent 1px);
+background-size: 31px 31px;
+background-color: #212121;
 }
 
 
@@ -26,20 +16,14 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 45px 0 0 0;
+    margin-top: 55px;
+    animation: aparicion 1s ease 0s 1 normal forwards;
     opacity: 0;
-    transition: 1.8s;
-    padding-top: 100px;
-  }
-
-  .container-visible {
-    opacity: 1;
-    padding-top: 0;
   }
   
   .cards {
     display: grid;
-    width: 100%;
+    width: 80%;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 15px;
     padding: 20px 40px;
@@ -51,6 +35,14 @@
   
   /* Style the cards */
   
+
+@media only screen and (max-width: 1023px) {
+  .portfolio-main {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
 @media only screen and (max-width: 915px) {
   .container-portfolio {
     margin: 30px 0 0 0;
@@ -73,4 +65,16 @@
         margin-bottom: 0;
     padding-bottom: 0;
       }
+}
+
+@keyframes aparicion {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
