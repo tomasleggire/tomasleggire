@@ -151,10 +151,12 @@ export default function Resume() {
       <Title title='MY RESUME' subTitle='RESUME' />
       <div className="main-timelines">
         <div className="timeline-edu">
-          <TimeLineExample infoResumeItems={educational} position={'left'}/>
+          <h2 className="time-line-title">Educational Qualification</h2>
+          <TimeLineExample infoResumeItems={educational} position={'left'} icon='educational'/>
         </div>
         <div className="timeline-work">
-          <TimeLineExample infoResumeItems={working} position={'right'}/>
+          <h2 className="time-line-title">Working Experience</h2>
+          <TimeLineExample infoResumeItems={working} position={'right'} icon='working'/>
         </div>
       </div>
     </div>
