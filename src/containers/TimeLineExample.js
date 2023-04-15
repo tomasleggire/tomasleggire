@@ -6,7 +6,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-function LineExample({ date, title, subtitle, parrafe }) {
+function LineExample({ date, title, subtitle, parrafe, position }) {
   return (
     <VerticalTimelineElement
         className="vertical-timeline-element--work pito"
@@ -14,6 +14,7 @@ function LineExample({ date, title, subtitle, parrafe }) {
         contentArrowStyle={{ borderRight: "7px solid  gray" }}
         date={date}
         iconStyle={{ display: "none" }}
+        position={position}
       >
         <h3 className="vertical-timeline-element-title h3-timeline">{title}</h3>
         <h4 className="vertical-timeline-element-subtitle h4-timeline">{subtitle}</h4>
@@ -22,7 +23,7 @@ function LineExample({ date, title, subtitle, parrafe }) {
   )
 }
 
-export default function TimeLineExample({ infoResumeItems }) {
+export default function TimeLineExample({ infoResumeItems, position }) {
   return (
     <VerticalTimeline lineColor="rgba(128, 128, 128, 0.603)">
       {infoResumeItems.map((infoResumeItem) => {
@@ -33,6 +34,7 @@ export default function TimeLineExample({ infoResumeItems }) {
             title={infoResumeItem.title}
             subtitle={infoResumeItem.subtitle}
             parrafe={infoResumeItem.parrafe}
+            position={position}
           />
         )
       })}

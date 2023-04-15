@@ -151,10 +151,10 @@ export default function Resume() {
       <Title title='MY RESUME' subTitle='RESUME' />
       <div className="main-timelines">
         <div className="timeline-edu">
-          <TimeLineExample infoResumeItems={educational}/>
+          <TimeLineExample infoResumeItems={educational} position={'left'}/>
         </div>
         <div className="timeline-work">
-          <TimeLineExample infoResumeItems={working}/>
+          <TimeLineExample infoResumeItems={working} position={'right'}/>
         </div>
       </div>
     </div>

@@ -47,15 +47,41 @@ background-color: #212121;
 
 .main-timelines {
     margin-top: 80px;
-    padding: 0 80px;
+    padding: 0 100px;
+    padding-bottom: 80px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
 }
 
 .timeline-edu, .timeline-work {
     width: 100%;
 }
+
+.timeline-edu {
+    margin-right: -750px;
+}
+
+
+@media only screen and (max-width: 1607px) {
+    .main-timelines {
+        padding: 0 50px;
+        padding-bottom: 80px;
+    }
+    .timeline-edu {
+        margin-right: -650px;
+    }
+}  
+
+@media only screen and (max-width: 1465px) {
+    .main-timelines {
+        padding: 0 30px;
+        padding-bottom: 80px;
+    }
+    .timeline-edu {
+        margin-right: -500px;
+    }
+}   
 
 
 @media only screen and (max-width: 1360px) {
@@ -66,6 +92,28 @@ background-color: #212121;
         width: min(500px, 800px);
     }
 }   
+
+@media only screen and (max-width: 1260px) {
+    .main-timelines {
+        padding: 0 10px;
+        padding-bottom: 80px;
+    }
+    .timeline-edu {
+        margin-right: -450px;
+    }
+}  
+@media only screen and (max-width: 1169px) {
+    .main-timelines {
+        padding: 0 20px;
+        padding-bottom: 80px;
+        flex-direction: column;
+    }
+    .timeline-edu {
+        margin-right: 0px;
+    }
+}  
+
+
 
 @media only screen and (max-width: 1150px) {
     .main-progress-container {
