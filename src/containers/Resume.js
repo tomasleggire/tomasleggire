@@ -28,7 +28,6 @@ export default function Resume() {
       now: 30,
     },
   ];
-
   const otherSkills = [
     {
       id: 4,
@@ -51,6 +50,45 @@ export default function Resume() {
       now: 30,
     },
   ];
+  const educational = [
+    {
+      id: 0,
+      date: '2008 - 2010',
+      title: 'Higher School Graduation',
+      subtitle: 'Abc College.',
+      parrafe: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.'
+    },
+    {
+      id: 1,
+      date: '2010 - 2014',
+      title: 'Bachelor of Sciences',
+      subtitle: 'Def University.',
+      parrafe: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.'
+    },
+    {
+      id: 2,
+      date: '2014 - 2016',
+      title: 'Masters of Sciences',
+      subtitle: 'Def University.',
+      parrafe: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.'
+    },
+  ]
+  const working = [
+    {
+      id: 0,
+      date: '2015 - 2017',
+      title: 'UI/UX Designer',
+      subtitle: 'Abc Company.',
+      parrafe: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.'
+    },
+    {
+      id: 1,
+      date: '2017 - Present',
+      title: 'Front-end Developer',
+      subtitle: 'Def Company.',
+      parrafe: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.'
+    },
+  ]
 
   return (
     <div className="resume-main-div">
@@ -110,8 +148,14 @@ export default function Resume() {
           })}
         </div>
       </div>
+      <Title title='MY RESUME' subTitle='RESUME' />
       <div className="main-timelines">
-        <TimeLineExample />
+        <div className="timeline-edu">
+          <TimeLineExample infoResumeItems={educational}/>
+        </div>
+        <div className="timeline-work">
+          <TimeLineExample infoResumeItems={working}/>
+        </div>
       </div>
     </div>
   );

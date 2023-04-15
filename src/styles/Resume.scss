@@ -45,6 +45,18 @@ background-color: #212121;
     width: min(600px, 800px);
 }
 
+.main-timelines {
+    margin-top: 80px;
+    padding: 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline-edu, .timeline-work {
+    width: 100%;
+}
+
 
 @media only screen and (max-width: 1360px) {
     .main-progress-container {

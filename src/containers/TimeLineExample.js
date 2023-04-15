@@ -6,39 +6,36 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-export default function TimeLineExample() {
+function LineExample({ date, title, subtitle, parrafe }) {
   return (
-    <VerticalTimeline lineColor="red">
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
+    <VerticalTimelineElement
+        className="vertical-timeline-element--work pito"
         contentStyle={{ background: "gray", color: "#fff" }}
         contentArrowStyle={{ borderRight: "7px solid  gray" }}
-        date="2011 - present"
+        date={date}
         iconStyle={{ display: "none" }}
       >
-        <h3 className="vertical-timeline-element-title">Creative Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-        <p>
-          Creative Direction, User Experience, Visual Design, Project
-          Management, Team Leading
-        </p>
+        <h3 className="vertical-timeline-element-title h3-timeline">{title}</h3>
+        <h4 className="vertical-timeline-element-subtitle h4-timeline">{subtitle}</h4>
+        <p>{parrafe}</p>
       </VerticalTimelineElement>
+  )
+}
 
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        contentStyle={{ background: "gray", color: "#fff" }}
-        contentArrowStyle={{ borderRight: "7px solid  gray" }}
-        date="2011 - present"
-        iconStyle={{ display: "none" }}
-        position="left"
-      >
-        <h3 className="vertical-timeline-element-title">Creative Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-        <p>
-          Creative Direction, User Experience, Visual Design, Project
-          Management, Team Leading
-        </p>
-      </VerticalTimelineElement>
+export default function TimeLineExample({ infoResumeItems }) {
+  return (
+    <VerticalTimeline lineColor="rgba(128, 128, 128, 0.603)">
+      {infoResumeItems.map((infoResumeItem) => {
+        return (
+          <LineExample 
+            key={infoResumeItem.id}
+            date={infoResumeItem.date}
+            title={infoResumeItem.title}
+            subtitle={infoResumeItem.subtitle}
+            parrafe={infoResumeItem.parrafe}
+          />
+        )
+      })}
     </VerticalTimeline>
   );
 }
