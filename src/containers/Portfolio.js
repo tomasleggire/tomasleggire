@@ -18,6 +18,12 @@ export default function Portfolio() {
     }, 500);
   }, []);
 
+  const [numElements, setNumElements] = useState(6);
+
+  function handleLoadMore() {
+    setNumElements(numElements + 3);
+  }
+
   return (
     <div className="portfolio-main">
       <Title title="MY WORKS" subTitle="WORKS" />
@@ -27,7 +33,7 @@ export default function Portfolio() {
         <>
           <div className="container-portfolio">
             <div className="cards">
-              {portfolioItems.map((item) => {
+              {portfolioItems.slice(0, numElements).map((item) => {
                 return (
                   <PortfolioItem
                     id={item.id}
@@ -40,6 +46,7 @@ export default function Portfolio() {
                 );
               })}
             </div>
+            {numElements == 12 ? '' : <button type="button" onClick={handleLoadMore} className="btn-load-more">LOAD MORE</button>}
           </div>
           {modalItemValue && (
             <ModalItemPort
