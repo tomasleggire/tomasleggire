@@ -20,7 +20,7 @@ export default function FormContact() {
         }
 
         if (!/\S+@\S+\.\S+/.test(email)) {
-            alert('Please enter a valid email address');
+            alert('Please enter a valid email address xd');
             return;
         }
 
