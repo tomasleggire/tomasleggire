@@ -15,7 +15,7 @@ export default function FormContact() {
         e.preventDefault();
 
         if (name.trim() === '') {
-            alert('Please enter your name');
+            alert('Please enter your name puto');
             return;
         }
 
