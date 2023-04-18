@@ -1,14 +1,15 @@
 @import "vars";
 
 .main-form {
-    max-width: 45%;
+    width: 60%;
     min-height: auto;
     margin: auto;
     background-color: var(--light-black);
     border: 1px solid rgba(211, 211, 211, 0.315);
     border-radius: 5px;
     padding: 25px 20px;
-    margin-top: 65px;
+    animation: aparicion 1s ease .3s 1 normal forwards;
+    opacity: 0;
 }
 
 .form-contact {
@@ -66,7 +67,7 @@
     padding: 8px 10px;
     transition: .3s;
     color: lightgray;
-    height: 120px;
+    height: 200px;
     resize: none;
     outline: none;
     background-color: var(--black);
@@ -88,4 +89,28 @@
 
 .btn-send:hover {
     background-color: var(--white);
+}
+
+@media only screen and (max-width: 1023px) {
+    .main-form {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .main-form {
+        width: 100%;
+    }
+}
+
+@keyframes aparicion {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
