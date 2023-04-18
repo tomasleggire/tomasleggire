@@ -4,6 +4,7 @@ import PortfolioItem from "../components/PortfolioItem";
 import AppContext from "../context/AppContext";
 import ModalItemPort from "./ModalItemPort";
 import Title from "../components/Title";
+import ReactLoading from 'react-loading';
 
 export default function Portfolio() {
   const { portfolioItems, mainItemModalPort, changeMainModalItem } =
@@ -28,7 +29,7 @@ export default function Portfolio() {
     <div className="portfolio-main">
       <Title title="MY WORKS" subTitle="WORKS" />
       {loading ? (
-        <p>Cargando...</p>
+        <div className="loader"><ReactLoading type={'spin'} color={'#14FFEC'} height={100} width={100} /></div>
       ) : (
         <>
           <div className="container-portfolio">
