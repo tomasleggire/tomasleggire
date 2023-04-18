@@ -45,23 +45,20 @@ export default function FormContact() {
 
     return (
         <div className="main-form">
-            <h1 className="form-title">Get in touch</h1>
             <form ref={form} onSubmit={sendEmail} className='form-contact'>
-                <div className='form-names'>
                     <div className='form-names-name'>
                         <label className='label'>NAME</label>
-                        <input type='text' name="user_name" className='input-name' value={name} onChange={(e) => setName(e.target.value)}/>
+                        <input type='text' name="user_name" className='input-name' value={name} onChange={(e) => setName(e.target.value)} placeholder='Enter your name...'/>
                     </div>
                     <div className='form-names-email'>
                         <label className='label'>EMAIL</label>
-                        <input type='email' name="user_email" className='input-email' value={email} onChange={(e) => setEmail(e.target.value)}/>
+                        <input type='email' name="user_email" className='input-email' value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Enter your email...'/>
                     </div>
-                </div>
                 <div className='form-message'>
                     <label className='label'>MESSAGE</label>
-                    <textarea name="message" className='form-msg-input' value={message} onChange={(e) => setMessage(e.target.value)}/>
+                    <textarea name="message" className='form-msg-input' value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Enter you message...'/>
                 </div>
-                <input type="submit" value="Send" className='btn-send' />
+                <button type="submit" className='btn-send'>SEND EMAIL</button>
             </form>
         </div>
     )

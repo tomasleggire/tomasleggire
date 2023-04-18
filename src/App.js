@@ -22,6 +22,7 @@ function App() {
           <Route path="/about" element={<Services />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/works" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
     </AppContext.Provider>
