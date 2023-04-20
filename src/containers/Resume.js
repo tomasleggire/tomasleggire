@@ -53,30 +53,30 @@ export default function Resume() {
   const educational = [
     {
       id: 0,
-      date: '2008 - 2010',
+      date: '2011 - 2017',
       title: 'Higher School Graduation',
-      subtitle: 'Abc College.',
-      parrafe: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.'
+      subtitle: 'S.A de Padua',
+      parrafe: 'In high school, I gained valuable experiences and knowledge that helped shape me into the person I am today. I explored different subjects and extracurricular activities, maintained good grades, and learned important skills such as time management, teamwork, and communication. My high school experience was a significant part of my personal and academic growth, and I am grateful for the opportunities and memories it provided.'
     },
     {
       id: 1,
-      date: '2010 - 2014',
-      title: 'Bachelor of Sciences',
-      subtitle: 'Def University.',
-      parrafe: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.'
+      date: '2020 - Lifelong',
+      title: 'Self-taught Developer',
+      subtitle: 'Lifelong learner',
+      parrafe: 'I am a self-taught web and mobille app developer, and I plan to be one for life. I have gained my skills through online courses, self-research, and lots of practice. I love learning and always seek new ways to improve my skills and knowledge. I feel very comfortable working autonomously and enjoy the challenges that web development presents me with.'
     },
     {
       id: 2,
-      date: '2014 - 2016',
-      title: 'Masters of Sciences',
-      subtitle: 'Def University.',
-      parrafe: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.'
+      date: '2022 - 2025',
+      title: 'Tech lead in Mobile Apps',
+      subtitle: 'National University of La Matanza',
+      parrafe: 'During my time at university, I had the opportunity to study fullstack mobile application design and development. The program provided me with a comprehensive understanding of the entire mobile app development process, from user experience design to back-end development and cloud deployment. Through hands-on projects and coursework, I gained practical experience in designing, developing, and deploying high-quality mobile applications. I learned valuable skills such as mobile app architecture, front-end and back-end development, database management, and cloud deployment, which have been instrumental in my professional development. My experience in fullstack mobile application design and development at university has been an essential component of my career path as a web developer, and I am grateful for the skills and knowledge that I have gained from this program.'
     },
   ]
   const working = [
     {
       id: 0,
-      date: '2015 - 2017',
+      date: '2022 - 2025',
       title: 'UI/UX Designer',
       subtitle: 'Abc Company.',
       parrafe: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.'
