@@ -15,7 +15,7 @@ export default function Resume() {
     {
       id: 1,
       text: "React Js",
-      now: 80,
+      now: 90,
     },
     {
       id: 2,
@@ -25,29 +25,29 @@ export default function Resume() {
     {
       id: 3,
       text: "JAVA",
-      now: 30,
+      now: 35,
     },
   ];
   const otherSkills = [
     {
       id: 4,
-      text: "JavaScript",
-      now: 85,
+      text: "TypeScript",
+      now: 40,
     },
     {
       id: 5,
-      text: "React Js",
-      now: 80,
+      text: "SQL",
+      now: 55,
     },
     {
       id: 6,
-      text: "Html & Css",
-      now: 95,
+      text: "Git & Github",
+      now: 80,
     },
     {
       id: 7,
-      text: "JAVA",
-      now: 30,
+      text: "React Native / Kotlin",
+      now: 50,
     },
   ];
   const educational = [
