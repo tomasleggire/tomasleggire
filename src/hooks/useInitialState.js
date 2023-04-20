@@ -1,10 +1,12 @@
 import { useState } from "react";
-import imageOne from '../icons/slider-icons/computadora.png';
-import imageTwo from '../icons/slider-icons/engranaje.png';
-import imageThree from '../icons/slider-icons/engranaje-framework.png';
-import imageFour from '../icons/slider-icons/internet.png';
-import imageFive from '../icons/slider-icons/presentacion.png';
-import imageSix from '../icons/slider-icons/frasco.png';
+import imageOne from '../icons/slider-icons/mobile-app-svgrepo-com.png';
+import imageTwo from '../icons/slider-icons/web-development-svgrepo-com.png';
+import imageThree from '../icons/slider-icons/html-coding-svgrepo-com.png';
+import imageFour from '../icons/slider-icons/site-svgrepo-com.png';
+import imageFive from '../icons/slider-icons/git-svgrepo-com.png';
+import imageSix from '../icons/slider-icons/potion-svgrepo-com.png';
+import imageSeven from '../icons/slider-icons/artificial-intelligence-svgrepo-com.png';
+import imageEight from '../icons/slider-icons/heart-file-svgrepo-com.png';
 
 import imagenUno from "../images/imagesPortfolio/itemPort1.png";
 import imagenDos from "../images/imagesPortfolio/itemPort2.png";
@@ -47,6 +49,16 @@ const useInitialState = () => {
       image: imageSix,
       text: "Ability to write unit tests for code and use testing frameworks to ensure code quality",
       title: "TESTING",
+    },
+    {
+      image: imageSeven,
+      text: "Use AI for productivity and efficiency. Improve my code to develop a competitive edge in my field.",
+      title: "AI USAGE",
+    },
+    {
+      image: imageEight,
+      text: "Driven by an insatiable thirst for knowledge and a relentless pursuit of excellence in my craft.",
+      title: "PASSION",
     },
   ];
 

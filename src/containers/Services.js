@@ -31,21 +31,21 @@ export default function Services() {
       img: FaCode,
       title: "Web Development",
       subTitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue diam etiam venenatis mi tristique amet cras diam etiam.",
+        "Websites and web applications using a variety of languages such as HTML, CSS, and JavaScript. It also involves using frameworks like React to build complex web applications.",
     },
     {
       num: 2,
       img: FaTabletAlt,
       title: "Mobile App Development",
       subTitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue diam etiam venenatis mi tristique amet cras diam etiam.",
+        "Creating software applications for mobile devices such as smartphones and tablets. This includes both iOS and Android development, as well as cross-platform development.",
     },
     {
       num: 3,
       img: FaDatabase,
       title: "Backend Development",
       subTitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue diam etiam venenatis mi tristique amet cras diam etiam.",
+        "Creating the server-side logic and database structures that power web and mobile applications to build scalable and performant products.",
     },
   ];
 
