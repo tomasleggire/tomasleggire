@@ -60,7 +60,7 @@ export default function Resume() {
     },
     {
       id: 1,
-      date: '2020 - Lifelong',
+      date: '2021 - Lifelong',
       title: 'Self-taught Developer',
       subtitle: 'Lifelong learner',
       parrafe: 'I am a self-taught web and mobille app developer, and I plan to be one for life. I have gained my skills through online courses, self-research, and lots of practice. I love learning and always seek new ways to improve my skills and knowledge. I feel very comfortable working autonomously and enjoy the challenges that web development presents me with.'
@@ -68,7 +68,7 @@ export default function Resume() {
     {
       id: 2,
       date: '2022 - 2025',
-      title: 'Tech lead in Mobile Apps',
+      title: 'Tech Lead in Mobile Apps',
       subtitle: 'National University of La Matanza',
       parrafe: 'During my time at university, I had the opportunity to study fullstack mobile application design and development. The program provided me with a comprehensive understanding of the entire mobile app development process, from user experience design to back-end development and cloud deployment. Through hands-on projects and coursework, I gained practical experience in designing, developing, and deploying high-quality mobile applications. I learned valuable skills such as mobile app architecture, front-end and back-end development, database management, and cloud deployment, which have been instrumental in my professional development. My experience in fullstack mobile application design and development at university has been an essential component of my career path as a web developer, and I am grateful for the skills and knowledge that I have gained from this program.'
     },
@@ -76,17 +76,17 @@ export default function Resume() {
   const working = [
     {
       id: 0,
-      date: '2022 - 2025',
-      title: 'UI/UX Designer',
-      subtitle: 'Abc Company.',
-      parrafe: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.'
+      date: '2021 - Present',
+      title: 'App Deploys',
+      subtitle: 'Consistency with Best Deployment Practices',
+      parrafe: 'As a developer, it is essential to have a solid understanding of deployment practices and to be able to incorporate them into your work seamlessly. One way I practice this is by ensuring that my deployed applications meet industry-standard needs that would make them viable for use in a job setting. I have been continually practicing this skill by deploying applications with a variety of needs, such as scalability, and user experience, to ensure that I am always staying current with the best practices. Through this continuous practice, I am confident that I can successfully deploy high-quality applications in any work setting.'
     },
     {
       id: 1,
-      date: '2017 - Present',
-      title: 'Front-end Developer',
-      subtitle: 'Def Company.',
-      parrafe: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.'
+      date: '2022 - Present',
+      title: 'System Assistant',
+      subtitle: 'YACO-SA',
+      parrafe: 'During my time as a systems assistant, I had the opportunity to work closely with developers on various projects, including web and mobile application development. I provided technical support to the team and helped troubleshoot any issues that arose during the development process. Additionally, I was responsible for maintaining the hardware and software systems, which gave me a better understanding of the overall infrastructure of web and mobile applications. This experience provided me with a deeper understanding of the software development process, including design, development, testing, and deployment. I was able to develop valuable technical skills that are applicable to web and mobile application development, such as programming languages, software tools, and database management. Overall, my experience as a systems assistant helped me to better understand the role of technology in application development and provided me with a solid foundation for pursuing a career in this field.'
     },
   ]
 
