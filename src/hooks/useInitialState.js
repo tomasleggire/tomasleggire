@@ -12,11 +12,27 @@ import imagenUno from "../images/imagesPortfolio/itemPort1.png";
 import imagenDos from "../images/imagesPortfolio/itemPort2.png";
 import imagenTres from "../images/imagesPortfolio/itemPort3.png";
 import imagenCuatro from "../images/imagesPortfolio/itemPort4.png";
+import imagenCinco from "../images/imagesPortfolio/itemPort5.png";
+import imagenSeis from "../images/imagesPortfolio/itemPort6.png";
+import imagenSiete from "../images/imagesPortfolio/itemPort7.png";
+import imagenOcho from "../images/imagesPortfolio/itemPort8.png";
+import imagenNueve from "../images/imagesPortfolio/itemPort9.png";
+import imagenDiez from "../images/imagesPortfolio/itemPort10.png";
+import imagenOnce from "../images/imagesPortfolio/itemPort11.png";
+import imagenDoce from "../images/imagesPortfolio/itemPort12.png";
 
 import imagenModalUno from "../images/imagesModalPortfolio/item1.PNG";
 import imagenModalDos from "../images/imagesModalPortfolio/item2.PNG";
 import imagenModalTres from "../images/imagesModalPortfolio/item3.PNG";
 import imagenModalCuatro from "../images/imagesModalPortfolio/item4.PNG";
+import imagenModalCinco from "../images/imagesModalPortfolio/item5.PNG";
+import imagenModalSeis from "../images/imagesModalPortfolio/item6.PNG";
+import imagenModalSiete from "../images/imagesModalPortfolio/item7.PNG";
+import imagenModalOcho from "../images/imagesModalPortfolio/item8.PNG";
+import imagenModalNueve from "../images/imagesModalPortfolio/item9.PNG";
+import imagenModalDiez from "../images/imagesModalPortfolio/item10.PNG";
+import imagenModalOnce from "../images/imagesModalPortfolio/item11.PNG";
+import imagenModalDoce from "../images/imagesModalPortfolio/item12.PNG";
 
 const useInitialState = () => {
   const optionsState = [
@@ -80,11 +96,11 @@ const useInitialState = () => {
     {
       id: 2,
       image: imagenDos,
-      title: "Weather React App",
+      title: "Weather App",
       text: "Web design/development",
       modal: {
         image: imagenModalDos,
-        title: "Weather React App",
+        title: "Weather App",
         text: "Web design/development",
         parrafe:
           "Provides users with up-to-date information about the weather conditions in their location or any other location of their interest, with a seccion where you can add those locations to favorites and a swtich to change between light mode and dark mode.",
@@ -121,114 +137,114 @@ const useInitialState = () => {
     },
     {
       id: 5,
-      image: imagenUno,
-      title: "Mobile First",
+      image: imagenCinco,
+      title: "TIC TAC TOE",
       text: "Web design/development",
       modal: {
-        image: imagenUno,
-        title: "C.R.U.D",
+        image: imagenModalCinco,
+        title: "TIC TAC TOE",
         text: "Web design/development",
         parrafe:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
-        url: "https://tomasleggire.github.io/Interactive-comments-section/",
+        url: "https://charming-cascaron-fe696f.netlify.app/",
       },
     },
     {
       id: 6,
-      image: imagenUno,
-      title: "Mobile First",
+      image: imagenSeis,
+      title: "Calculator",
       text: "Web design/development",
       modal: {
-        image: imagenUno,
-        title: "C.R.U.D",
+        image: imagenModalSeis,
+        title: "Calculator",
         text: "Web design/development",
         parrafe:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
-        url: "https://tomasleggire.github.io/Interactive-comments-section/",
+        url: "https://bespoke-monstera-6e68bd.netlify.app/",
       },
     },
     {
       id: 7,
-      image: imagenUno,
-      title: "Mobile First",
+      image: imagenSiete,
+      title: "Todo App",
       text: "Web design/development",
       modal: {
-        image: imagenUno,
-        title: "C.R.U.D",
+        image: imagenModalSiete,
+        title: "Todo App",
         text: "Web design/development",
         parrafe:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
-        url: "https://tomasleggire.github.io/Interactive-comments-section/",
+        url: "https://scintillating-longma-d99be7.netlify.app/",
       },
     },
     {
       id: 8,
-      image: imagenUno,
-      title: "Mobile First",
+      image: imagenOcho,
+      title: "Advice Generator",
       text: "Web design/development",
       modal: {
-        image: imagenUno,
-        title: "C.R.U.D",
+        image: imagenModalOcho,
+        title: "Advice Generator",
         text: "Web design/development",
         parrafe:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
-        url: "https://tomasleggire.github.io/Interactive-comments-section/",
+        url: "https://stellar-swan-bb1834.netlify.app/",
       },
     },
     {
       id: 9,
-      image: imagenUno,
+      image: imagenNueve,
       title: "Mobile First",
       text: "Web design/development",
       modal: {
-        image: imagenUno,
+        image: imagenModalNueve,
         title: "C.R.U.D",
         text: "Web design/development",
         parrafe:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
-        url: "https://tomasleggire.github.io/Interactive-comments-section/",
+        url: "https://fastidious-macaron-8d1a6e.netlify.app/",
       },
     },
     {
       id: 10,
-      image: imagenUno,
+      image: imagenDiez,
       title: "Mobile First",
       text: "Web design/development",
       modal: {
-        image: imagenUno,
+        image: imagenModalDiez,
         title: "C.R.U.D",
         text: "Web design/development",
         parrafe:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
-        url: "https://tomasleggire.github.io/Interactive-comments-section/",
+        url: "https://fascinating-fudge-134231.netlify.app/",
       },
     },
     {
       id: 11,
-      image: imagenUno,
+      image: imagenOnce,
       title: "Mobile First",
       text: "Web design/development",
       modal: {
-        image: imagenUno,
+        image: imagenModalOnce,
         title: "C.R.U.D",
         text: "Web design/development",
         parrafe:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
-        url: "https://tomasleggire.github.io/Interactive-comments-section/",
+        url: "https://rococo-faun-37be35.netlify.app/",
       },
     },
     {
       id: 12,
-      image: imagenUno,
+      image: imagenDoce,
       title: "Mobile First",
       text: "Web design/development",
       modal: {
-        image: imagenUno,
+        image: imagenModalDoce,
         title: "C.R.U.D",
         text: "Web design/development",
         parrafe:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
-        url: "https://tomasleggire.github.io/Interactive-comments-section/",
+        url: "https://fantastic-pie-9ab743.netlify.app/",
       },
     },
   ];
