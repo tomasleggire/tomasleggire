@@ -82,7 +82,7 @@
 .modal-item-btn {
     border: none;
     background: none;
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: var(--md);
     color: var(--black);
     background-color: var(--high-blue);
@@ -90,6 +90,14 @@
     border-radius: 5px;
     cursor: pointer;
     transition: .3s;
+}
+
+.modal-item-btn a {
+    text-decoration: none;
+}
+
+.modal-item-btn a:visited {
+    color: var(--black);
 }
 
 .modal-item-btn:hover {

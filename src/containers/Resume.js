@@ -78,7 +78,7 @@ export default function Resume() {
       id: 0,
       date: '2021 - Present',
       title: 'App Deploys',
-      subtitle: 'Consistency with Best Deployment Practices',
+      subtitle: 'Consistency with Best Practices',
       parrafe: 'As a developer, it is essential to have a solid understanding of deployment practices and to be able to incorporate them into your work seamlessly. One way I practice this is by ensuring that my deployed applications meet industry-standard needs that would make them viable for use in a job setting. I have been continually practicing this skill by deploying applications with a variety of needs, such as scalability, and user experience, to ensure that I am always staying current with the best practices. Through this continuous practice, I am confident that I can successfully deploy high-quality applications in any work setting.'
     },
     {

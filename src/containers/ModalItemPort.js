@@ -24,7 +24,7 @@ export default function ModalItemPort({ setModalItemValue, mainItemModalPort }) 
                         <h1 className="modal-item-h1">{mainItemModalPort.title}</h1>
                         <h3 className="modal-item-h3">{mainItemModalPort.text}</h3>
                         <p className="modal-item-p">{mainItemModalPort.parrafe}</p>
-                    <button className="modal-item-btn">VIEW WEBSITE</button>
+                    <button className="modal-item-btn"><a href={mainItemModalPort.url} target="_blank" >VIEW WEBSITE</a></button>
                     </div>
                 </div>
                 <button className="modal-item-closeBtn" onClick={handleCloseModal}>

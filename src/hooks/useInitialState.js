@@ -1,12 +1,12 @@
 import { useState } from "react";
-import imageOne from '../icons/slider-icons/mobile-app-svgrepo-com.png';
-import imageTwo from '../icons/slider-icons/web-development-svgrepo-com.png';
-import imageThree from '../icons/slider-icons/html-coding-svgrepo-com.png';
-import imageFour from '../icons/slider-icons/site-svgrepo-com.png';
-import imageFive from '../icons/slider-icons/git-svgrepo-com.png';
-import imageSix from '../icons/slider-icons/potion-svgrepo-com.png';
-import imageSeven from '../icons/slider-icons/artificial-intelligence-svgrepo-com.png';
-import imageEight from '../icons/slider-icons/heart-file-svgrepo-com.png';
+import imageOne from "../icons/slider-icons/mobile-app-svgrepo-com.png";
+import imageTwo from "../icons/slider-icons/web-development-svgrepo-com.png";
+import imageThree from "../icons/slider-icons/html-coding-svgrepo-com.png";
+import imageFour from "../icons/slider-icons/site-svgrepo-com.png";
+import imageFive from "../icons/slider-icons/git-svgrepo-com.png";
+import imageSix from "../icons/slider-icons/potion-svgrepo-com.png";
+import imageSeven from "../icons/slider-icons/artificial-intelligence-svgrepo-com.png";
+import imageEight from "../icons/slider-icons/heart-file-svgrepo-com.png";
 
 import imagenUno from "../images/imagesPortfolio/itemPort1.png";
 import imagenDos from "../images/imagesPortfolio/itemPort2.png";
@@ -73,7 +73,8 @@ const useInitialState = () => {
         title: "C.R.U.D",
         text: "Web design/development",
         parrafe:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
+          "CRUD operations are essential for managing and manipulating data in many software applications and database systems. They provide a basic set of functionalities for creating, reading, updating, and deleting data, which are necessary for building complex applications and managing large amounts of data.",
+        url: "https://tomasleggire.github.io/Interactive-comments-section/",
       },
     },
     {
@@ -86,7 +87,8 @@ const useInitialState = () => {
         title: "Weather React App",
         text: "Web design/development",
         parrafe:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
+          "Provides users with up-to-date information about the weather conditions in their location or any other location of their interest, with a seccion where you can add those locations to favorites and a swtich to change between light mode and dark mode.",
+        url: "https://tomasleggire.github.io/Weather-React-App-v2/",
       },
     },
     {
@@ -99,7 +101,8 @@ const useInitialState = () => {
         title: "Ecommerce Product Page",
         text: "Web design/development",
         parrafe:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
+          "Application that allows users to purchase products or services directly from their mobile devices. The app typically offers a variety of features to help users browse, search for, and purchase products, as well as manage their accounts and track their orders.",
+        url: "https://tomasleggire.github.io/ecommerce-product-main-page/",
       },
     },
     {
@@ -112,7 +115,8 @@ const useInitialState = () => {
         title: "Interactive Card Form",
         text: "Web design/development",
         parrafe:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
+          "An interactive card form with managed errors is a type of user interface that allows users to input information through a card-style form, with real-time error handling and feedback to help them correct any mistakes or omissions.",
+        url: "https://tomasleggire.github.io/interactive-card-details-form/",
       },
     },
     {
@@ -126,6 +130,7 @@ const useInitialState = () => {
         text: "Web design/development",
         parrafe:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
+        url: "https://tomasleggire.github.io/Interactive-comments-section/",
       },
     },
     {
@@ -139,6 +144,7 @@ const useInitialState = () => {
         text: "Web design/development",
         parrafe:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
+        url: "https://tomasleggire.github.io/Interactive-comments-section/",
       },
     },
     {
@@ -152,6 +158,7 @@ const useInitialState = () => {
         text: "Web design/development",
         parrafe:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
+        url: "https://tomasleggire.github.io/Interactive-comments-section/",
       },
     },
     {
@@ -165,6 +172,7 @@ const useInitialState = () => {
         text: "Web design/development",
         parrafe:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
+        url: "https://tomasleggire.github.io/Interactive-comments-section/",
       },
     },
     {
@@ -178,6 +186,7 @@ const useInitialState = () => {
         text: "Web design/development",
         parrafe:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
+        url: "https://tomasleggire.github.io/Interactive-comments-section/",
       },
     },
     {
@@ -191,6 +200,7 @@ const useInitialState = () => {
         text: "Web design/development",
         parrafe:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
+        url: "https://tomasleggire.github.io/Interactive-comments-section/",
       },
     },
     {
@@ -204,6 +214,7 @@ const useInitialState = () => {
         text: "Web design/development",
         parrafe:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
+        url: "https://tomasleggire.github.io/Interactive-comments-section/",
       },
     },
     {
@@ -217,6 +228,7 @@ const useInitialState = () => {
         text: "Web design/development",
         parrafe:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
+        url: "https://tomasleggire.github.io/Interactive-comments-section/",
       },
     },
   ];
@@ -227,12 +239,13 @@ const useInitialState = () => {
     text: "Web design/development",
     parrafe:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
+    url: 'https://tomasleggire.github.io/Interactive-comments-section/',
   });
 
   const changeMainModalItem = (id) => {
     const indexItem = portfolioItems.findIndex((item) => item.id === id);
     const newMainItem = {
-      ...portfolioItems[indexItem].modal
+      ...portfolioItems[indexItem].modal,
     };
     setMainItemModalPort(newMainItem);
   };
