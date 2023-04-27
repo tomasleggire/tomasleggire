@@ -145,7 +145,7 @@ const useInitialState = () => {
         title: "TIC TAC TOE",
         text: "Web design/development",
         parrafe:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
+          "This project uses programming logic to create a graphical user interface that allows players to interact with the game using the mouse or touch screen and change between the differents mode games. The game logic is implemented using data structures and algorithms, allowing it to determine the current state of the game and whether the game has ended in a win, draw, or loss.",
         url: "https://charming-cascaron-fe696f.netlify.app/",
       },
     },
@@ -159,7 +159,7 @@ const useInitialState = () => {
         title: "Calculator",
         text: "Web design/development",
         parrafe:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
+          "A calculator app is a program that performs basic arithmetic calculations such as addition, subtraction, multiplication, and division. The app is typically designed to provide users with an intuitive interface that is easy to use and understand, and included the ability to switch between different color schemes.",
         url: "https://bespoke-monstera-6e68bd.netlify.app/",
       },
     },
@@ -173,7 +173,7 @@ const useInitialState = () => {
         title: "Todo App",
         text: "Web design/development",
         parrafe:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
+          "A native todo app in JavaScript is an application designed to help users organize their daily tasks and activities. The main goal of this app is to provide an intuitive interface that allows users to create and manage task lists effectively and a swtich to change between light mode and dark mode.",
         url: "https://scintillating-longma-d99be7.netlify.app/",
       },
     },
@@ -187,35 +187,35 @@ const useInitialState = () => {
         title: "Advice Generator",
         text: "Web design/development",
         parrafe:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
+          "Application that generates random phrases through an API. This application has been designed to provide users with unique and creative phrases that can be useful in different situations.",
         url: "https://stellar-swan-bb1834.netlify.app/",
       },
     },
     {
       id: 9,
       image: imagenNueve,
-      title: "Mobile First",
+      title: "Rating Component",
       text: "Web design/development",
       modal: {
         image: imagenModalNueve,
-        title: "C.R.U.D",
+        title: "Rating Component",
         text: "Web design/development",
         parrafe:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
+          "A rating component is a user interface element that allows users to rate items, such as products, services, or content. It typically consists of a series of stars, where users can click on the stars to indicate their rating. The rating is usually displayed as a numerical value, such as a rating out of 5 stars.",
         url: "https://fastidious-macaron-8d1a6e.netlify.app/",
       },
     },
     {
       id: 10,
       image: imagenDiez,
-      title: "Mobile First",
+      title: "Time Tracking",
       text: "Web design/development",
       modal: {
         image: imagenModalDiez,
-        title: "C.R.U.D",
+        title: "Time Tracking",
         text: "Web design/development",
         parrafe:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
+          "Strong skills in markup, including HTML and CSS, which allows me to create well-structured, visually appealing web pages. I am able to use these skills to ensure that web pages are easy to read and navigate, and that they look great on all types of devices, In addition to your markup skills, i am also proficient in working with JSON data.",
         url: "https://fascinating-fudge-134231.netlify.app/",
       },
     },
@@ -229,7 +229,7 @@ const useInitialState = () => {
         title: "C.R.U.D",
         text: "Web design/development",
         parrafe:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
+          "Strong skills in markup, including HTML and CSS, which allows me to create well-structured, visually appealing web pages. I am able to use these skills to ensure that web pages are easy to read and navigate, and that they look great on all types of devices, In addition to your markup skills, i am also proficient in working with JSON data.",
         url: "https://rococo-faun-37be35.netlify.app/",
       },
     },
@@ -243,7 +243,7 @@ const useInitialState = () => {
         title: "C.R.U.D",
         text: "Web design/development",
         parrafe:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi facere recusandae qui aliquid molestiae reiciendis adipisci deleniti maiores, hic eos fugit amet veritatis ab possimus, tempora ex eaque nostrum.",
+          "Strong skills in markup, including HTML and CSS, which allows me to create well-structured, visually appealing web pages. I am able to use these skills to ensure that web pages are easy to read and navigate, and that they look great on all types of devices, In addition to your markup skills, i am also proficient in working with JSON data.",
         url: "https://fantastic-pie-9ab743.netlify.app/",
       },
     },
