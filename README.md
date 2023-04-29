@@ -34,4 +34,4 @@ License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 Contact
-If you have any questions or feedback, feel free to contact me at [insert email address here].
+If you have any questions or feedback, feel free to contact me at tomasleggire@hotmail.com
