@@ -12,8 +12,8 @@ export default function NavMenu({ menuValue, setMenuValue }) {
         },
         {
             id: 2,
-            text: 'About',
-            path: "/about"
+            text: 'Works',
+            path: "/works"
         },
         {
             id: 3,
@@ -22,8 +22,8 @@ export default function NavMenu({ menuValue, setMenuValue }) {
         },
         {
             id: 4,
-            text: 'Works',
-            path: "/works"
+            text: 'About',
+            path: "/about"
         },
         {
             id: 5,

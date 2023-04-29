@@ -28,11 +28,11 @@ export default function NavMenuMobile({ menuMobileValue, setMenuMobileValue }) {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/about" onClick={() => {
+                        <Link to="/works" onClick={() => {
                             setMenuMobileValue(false);
                             scrollToTop();
                         }} className="link-mobile">
-                            <h2><span>02. </span>ABOUT</h2>
+                            <h2><span>02. </span>WORKS</h2>
                         </Link>
                     </li>
                     <li>
@@ -44,11 +44,11 @@ export default function NavMenuMobile({ menuMobileValue, setMenuMobileValue }) {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/works" onClick={() => {
+                        <Link to="/about" onClick={() => {
                             setMenuMobileValue(false);
                             scrollToTop();
                         }} className="link-mobile">
-                            <h2><span>04. </span>WORKS</h2>
+                            <h2><span>04. </span>ABOUT</h2>
                         </Link>
                     </li>
                     <li>
