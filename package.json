@@ -1,5 +1,5 @@
 {
-  "name": "tomasleggire.github.io",
+  "name": "tomasleggire",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -61,5 +61,5 @@
   "devDependencies": {
     "gh-pages": "^5.0.0"
   },
-  "homepage": "https://tomasleggire.github.io/tomasleggire.github.io"
+  "homepage": "https://tomasleggire.github.io/tomasleggire"
 }
