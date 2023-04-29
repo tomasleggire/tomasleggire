@@ -25,19 +25,19 @@ export default function Resume() {
     {
       id: 3,
       text: "JAVA",
-      now: 35,
+      now: 60,
     },
   ];
   const otherSkills = [
     {
       id: 4,
       text: "TypeScript",
-      now: 40,
+      now: 65,
     },
     {
       id: 5,
       text: "SQL",
-      now: 55,
+      now: 65,
     },
     {
       id: 6,
@@ -47,7 +47,7 @@ export default function Resume() {
     {
       id: 7,
       text: "React Native / Kotlin",
-      now: 50,
+      now: 75,
     },
   ];
   const educational = [
@@ -105,7 +105,7 @@ export default function Resume() {
           classNameCircle="circle-2"
         />
         <ProgressCircle
-          porcentaje={30}
+          porcentaje={65}
           name="Back-end Development"
           classNameCircle="circle-3"
         />
