@@ -9,6 +9,7 @@ import useInitialState from "./hooks/useInitialState";
 import Resume from "./containers/Resume";
 import Portfolio from "./containers/Portfolio";
 import Contact from "./containers/Contact";
+import NotFound from "./components/NotFound";
 
 function App() {
   const initialState = useInitialState();
@@ -23,6 +24,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/works" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
     </AppContext.Provider>

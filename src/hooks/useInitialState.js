@@ -208,11 +208,11 @@ const useInitialState = () => {
     {
       id: 10,
       image: imagenDiez,
-      title: "Time Tracking",
+      title: "Time Tracking Section",
       text: "Web design/development",
       modal: {
         image: imagenModalDiez,
-        title: "Time Tracking",
+        title: "Time Tracking Section",
         text: "Web design/development",
         parrafe:
           "Strong skills in markup, including HTML and CSS, which allows me to create well-structured, visually appealing web pages. I am able to use these skills to ensure that web pages are easy to read and navigate, and that they look great on all types of devices, In addition to your markup skills, i am also proficient in working with JSON data.",
@@ -222,11 +222,11 @@ const useInitialState = () => {
     {
       id: 11,
       image: imagenOnce,
-      title: "Mobile First",
+      title: "Simple Chat Booking",
       text: "Web design/development",
       modal: {
         image: imagenModalOnce,
-        title: "C.R.U.D",
+        title: "Simple Chat Booking",
         text: "Web design/development",
         parrafe:
           "Strong skills in markup, including HTML and CSS, which allows me to create well-structured, visually appealing web pages. I am able to use these skills to ensure that web pages are easy to read and navigate, and that they look great on all types of devices, In addition to your markup skills, i am also proficient in working with JSON data.",
@@ -236,11 +236,11 @@ const useInitialState = () => {
     {
       id: 12,
       image: imagenDoce,
-      title: "Mobile First",
+      title: "Intro Section",
       text: "Web design/development",
       modal: {
         image: imagenModalDoce,
-        title: "C.R.U.D",
+        title: "Intro Section",
         text: "Web design/development",
         parrafe:
           "Strong skills in markup, including HTML and CSS, which allows me to create well-structured, visually appealing web pages. I am able to use these skills to ensure that web pages are easy to read and navigate, and that they look great on all types of devices, In addition to your markup skills, i am also proficient in working with JSON data.",
