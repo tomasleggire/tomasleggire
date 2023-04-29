@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Contact.scss";
 import FormContact from "../components/FormContact";
 import Title from "../components/Title";
 import { MdLocalPhone } from "react-icons/md";
+import { MdMail } from "react-icons/md";
+import { MdLocationOn } from "react-icons/md";
 
 export default function Contact() {
   return (
@@ -12,12 +14,21 @@ export default function Contact() {
         <div className="contact-info-details">
           <h2 className="h2-details">Contact Information</h2>
           <p className="p-details">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis,
-            iusto harum possimus non praesentium qui facere.
+            Get in Touch and Let's Create Something Amazing: Contact Me for
+            Project Inquiries, Partnerships, or Just to Say Hello
           </p>
-          <DetailsDivExample />
-          <DetailsDivExample />
-          <DetailsDivExample />
+          <DetailsDivExample title="on phone" span="+11 32834063">
+            <MdLocalPhone className="details-icon" />
+          </DetailsDivExample>
+          <DetailsDivExample title="on mail" span="tomasleggire@hotmail.com">
+            <MdMail className="details-icon" />
+          </DetailsDivExample>
+          <DetailsDivExample
+            title="address"
+            span="San Antonio de Padua, Buenos Aires, Argentina"
+          >
+            <MdLocationOn className="details-icon" />
+          </DetailsDivExample>
         </div>
         <FormContact />
       </div>
@@ -25,16 +36,30 @@ export default function Contact() {
   );
 }
 
-function DetailsDivExample() {
+function DetailsDivExample({ children, title, span }) {
   return (
     <div className="details-div-info">
-      <div className="details-icon-container">
-        <MdLocalPhone className="details-icon" />
-      </div>
+      <div className="details-icon-container">{children}</div>
       <div className="details-text">
-        <h3 className="h3-details">Contact on phone</h3>
-        <span className="span-details">+012-3456-7891</span>
+        <h3 className="h3-details">Contact {title}</h3>
+        <SpanWithCopy text={span} />
       </div>
     </div>
+  );
+}
+
+function SpanWithCopy({ text }) {
+  const [showCopiedMessage, setShowCopiedMessage] = useState(false);
+  function handleClick() {
+    navigator.clipboard.writeText(text);
+    setShowCopiedMessage(true);
+    setTimeout(() => setShowCopiedMessage(false), 2000);
+  }
+
+  return (
+    <>
+      <span onClick={handleClick} className="span-details">{text}</span>
+      <p className={`copied-p ${showCopiedMessage && 'visible-copied'}`}>Copied to clipboard!</p>
+    </>
   );
 }
