@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/App.scss";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import HomeContainer from "./containers/HomeContainer";
 import Navbar from "./containers/Navbar";
 import Services from "./containers/Services";
@@ -16,7 +16,6 @@ function App() {
 
   return (
     <AppContext.Provider value={initialState}>
-      <Router>
         <Navbar />
         <Routes>
           <Route path="/" element={<HomeContainer />} />
@@ -26,7 +25,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </Router>
     </AppContext.Provider>
   );
 }
