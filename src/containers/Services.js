@@ -16,6 +16,8 @@ import Option from "../components/Option";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
+import pdf from '../pdfs/tomasleggire.pdf';
+
 export default function Services() {
   const { optionsState } = useContext(AppContext);
 
@@ -98,9 +100,11 @@ export default function Services() {
             <li>Address: Merlo, Buenos Aires, Argentina</li>
             <li>Freelance: Avaliable</li>
           </ul>
-          <button type="button" className="btn-about">
+          <a href={pdf} target="_blank">
+          <button type="button" className="btn-about" >
             DOWNLOAD CV
           </button>
+          </a>
         </div>
       </div>
       <Title title="MY SERVICES" subTitle="SERVICES" />
